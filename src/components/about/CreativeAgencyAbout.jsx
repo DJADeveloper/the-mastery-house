@@ -93,9 +93,9 @@ const CreativeAgencyAbout = () => {
                 </p>
                 <p>
                   Our story is one of relentless determination and a pursuit of
-                  excellence, underpinned by our core belief that "Your Success
-                  is Our Code." At The Mastery House, we don’t just build
-                  digital experiences; we build connections, fostering
+                  excellence, underpinned by our core belief that &quot;Your
+                  Success is Our Code.&quot; At The Mastery House, we don’t just
+                  build digital experiences; we build connections, fostering
                   relationships with our clients that are based on trust and
                   mutual growth. Every project we undertake is a reflection of
                   our commitment to innovation and our dedication to creating
