@@ -133,33 +133,33 @@ const CreativeAgencyService = () => {
                 <div className="service__item-7">
                   {/* <Link href="/service-details-dark"> */}
                   <h3 className="service__title-7">
-                    Business <span>Strategy</span>
+                    Content <span>Creation</span>
                   </h3>
                   {/* </Link> */}
                   <p>
-                    Leverage our expertise to develop business strategies that
-                    drive success and foster growth.
+                    Craft compelling narratives and impactful content to
+                    resonate with your target audience.
                   </p>
                   <ul>
-                    <li>+ Market Analysis</li>
-                    <li>+ Business Plan Development</li>
-                    <li>+ Financial Planning</li>
+                    <li>+ Article & Blog Writing</li>
+                    <li>+ Copywriting</li>
+                    <li>+ Graphic Design</li>
                   </ul>
                 </div>
                 <div className="service__item-7">
                   {/* <Link href="/service-details-dark"> */}
                   <h3 className="service__title-7">
-                    Illustration <span>Modelling</span>
+                    Social Media <span>Management</span>
                   </h3>
                   {/* </Link> */}
                   <p>
-                    Enhance your brand with bespoke illustrations and models
-                    that captivate and inspire your audience.
+                    Elevate your brand's online presence with our expert social
+                    media management strategies and services.
                   </p>
                   <ul>
-                    <li>+ Custom Illustrations</li>
-                    <li>+ 3D Modelling</li>
-                    <li>+ Animation</li>
+                    <li>+ Platform Strategy</li>
+                    <li>+ Content Calendaring</li>
+                    <li>+ Engagement Monitoring</li>
                   </ul>
                 </div>
               </div>
