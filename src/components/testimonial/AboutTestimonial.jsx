@@ -44,8 +44,8 @@ const AboutTestimonial = () => {
                     }}
                   >
                     <SwiperSlide>
-                      <div className="testimonial__slide">
-                        <div className="testimonial__inner-2">
+                      <div className="testimonial__slide  ">
+                        <div className="testimonial__inner-2 p-3">
                           <h2 className="testimonial__title-2">
                             Unmatched Expertise
                           </h2>
@@ -67,7 +67,7 @@ const AboutTestimonial = () => {
 
                     <SwiperSlide className="swiper-slide ">
                       <div className="testimonial__slide">
-                        <div className="testimonial__inner-2">
+                        <div className="testimonial__inner-2 p-3">
                           <h2 className="testimonial__title-2">
                             Above and Beyond
                           </h2>
@@ -90,7 +90,7 @@ const AboutTestimonial = () => {
 
                     <SwiperSlide>
                       <div className="testimonial__slide">
-                        <div className="testimonial__inner-2">
+                        <div className="testimonial__inner-2 p-3">
                           <h2 className="testimonial__title-2">
                             Masters of Digital Craft
                           </h2>
