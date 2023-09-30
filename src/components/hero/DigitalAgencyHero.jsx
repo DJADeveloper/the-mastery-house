@@ -77,7 +77,7 @@ const DigitalAgencyHero = () => {
                 </div> */}
                 <div className="hero__title-wrapper">
                   <p className="hero__sub-title" ref={heroSubTitle}>
-                    Merging technology and creativity, we embody
+                    Merging technology and creativity, we embody{" "}
                     <span>creative problem-solving</span> to craft unique
                     experiences.
                   </p>

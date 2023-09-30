@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger, ScrollSmoother, ScrollToPlugin } from "@/plugins";
 import A1 from "../../../public/assets/imgs/home-7/a1.jpg";
@@ -40,8 +40,18 @@ const CreativeAgencyAbout = () => {
     }
   }, []);
 
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // Conditionally apply the "d-flex" class based on device width
-  const deviceWidth = window.innerWidth;
+  const deviceWidth = windowWidth;
   const aboutMidClasses =
     deviceWidth < 1025
       ? "about__mid-7"
@@ -50,7 +60,7 @@ const CreativeAgencyAbout = () => {
   return (
     <>
       {/* Video/Image Section */}
-      <div className="video__area about__img-2">
+      {/* <div className="video__area about__img-2">
         <Image
           priority
           width={deviceWidth < 1025 ? 300 : 1000}
@@ -59,15 +69,18 @@ const CreativeAgencyAbout = () => {
           alt="Video Image"
           data-speed="0.2"
         />
-      </div>
+      </div> */}
 
       {/* About Section */}
       <section className="about__area-7">
         <div className="container pt-4 pb-4">
-          <div className="row">
-            <div className="col-xxl-12">
+          <div
+            className="row"
+            style={windowWidth <= 768 ? { display: "none" } : {}}
+          >
+            <div className="col-xxl-12 ">
               <div className="sec-title-wrapper">
-                <h2 className="sec-title title-anim">
+                <h2 className="sec-title title-anim ">
                   The Mastery House <br /> Story.
                 </h2>
               </div>
@@ -92,15 +105,16 @@ const CreativeAgencyAbout = () => {
             </div>
           </div>
         </div>
-
-        <Image
-          priority
-          width={76}
-          height={119}
-          src={Shape4}
-          alt="Shape"
-          className="shape-1"
-        />
+        <div style={windowWidth <= 768 ? { display: "none" } : {}}>
+          <Image
+            priority
+            width={76}
+            height={119}
+            src={Shape4}
+            alt="Shape"
+            className="shape-1"
+          />
+        </div>
       </section>
     </>
   );
