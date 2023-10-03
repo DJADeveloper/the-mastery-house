@@ -152,10 +152,11 @@ const CreativeAgencyService = () => {
                     Social Media <span>Management</span>
                   </h3>
                   {/* </Link> */}
-                  <p>
+                  {/* <p>
                     Elevate your brand's online presence with our expert social
-                    media management strategies and services.
-                  </p>
+                    media management strategies media management strategies and
+                    services.
+                  </p> */}
                   <ul>
                     <li>+ Platform Strategy</li>
                     <li>+ Content Calendaring</li>
