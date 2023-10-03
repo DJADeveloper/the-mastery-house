@@ -131,7 +131,7 @@ export default function Footer3() {
                     </p>
                   </div>
 
-                  <div className="footer__subscribe">
+                  {/* <div className="footer__subscribe">
                     <form action="#">
                       <input
                         type="email"
@@ -142,7 +142,7 @@ export default function Footer3() {
                         <i className="fa-solid fa-paper-plane"></i>
                       </button>
                     </form>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
