@@ -4,34 +4,76 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 
-gsap.registerPlugin(ScrollTrigger);
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 
-const DigitalAgencyWorkflow = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const MasteryHouseWorkflow = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      let tHero = gsap.context(() => {
-        gsap.set(".fade_left", { x: -20, opacity: 0 });
-        gsap.to(".fade_left", {
-          scrollTrigger: {
-            trigger: ".fade_left",
-            start: "top center+=300",
-          },
-          x: 0,
-          opacity: 1,
-          ease: "power2.out",
-          duration: 1,
-          stagger: {
-            each: 0.2,
-          },
-        });
+      gsap.set(".fade_left", { x: -20, opacity: 0 });
+      gsap.to(".fade_left", {
+        scrollTrigger: {
+          trigger: ".fade_left",
+          start: "top center+=300",
+        },
+        x: 0,
+        opacity: 1,
+        ease: "power2.out",
+        duration: 1,
+        stagger: {
+          each: 0.2,
+        },
       });
-      return () => tHero.revert();
     }
   }, []);
+
+  const steps = [
+    {
+      number: "01",
+      title: "Digital Needs Assessment",
+      description: "Understand the client's business model and digital needs.",
+    },
+    {
+      number: "02",
+      title: "Strategy & Planning",
+      description:
+        "Design a comprehensive digital strategy tailored to client objectives.",
+    },
+    {
+      number: "03",
+      title: "Design & Development",
+      description: "Craft visually stunning and functional digital assets.",
+    },
+    {
+      number: "04",
+      title: "Digital Marketing & Branding",
+      description: "Initiate campaigns across platforms for maximum reach.",
+    },
+    {
+      number: "05",
+      title: "SEO & Content Strategy",
+      description: "Implement SEO strategies and create high-quality content.",
+    },
+    {
+      number: "06",
+      title: "Performance Analytics & Feedback",
+      description: "Monitor performance and engage in iterative refinements.",
+    },
+    {
+      number: "07",
+      title: "Maintenance & Support",
+      description: "Offer continued support, updates, and upgrades.",
+    },
+    {
+      number: "08",
+      title: "Growth & Scaling",
+      description:
+        "Reassess and introduce advanced solutions as business grows.",
+    },
+  ];
+
   return (
     <>
       <section className="workflow__area">
@@ -68,81 +110,16 @@ const DigitalAgencyWorkflow = () => {
                   },
                 }}
               >
-                <div className="swiper-wrapper">
-                  <SwiperSlide>
+                {steps.map((step, index) => (
+                  <SwiperSlide key={index}>
                     <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">Step 01</h4>
-                      <h5 className="workflow__number">01</h5>
-                      <h6 className="workflow__title">Discovery Session</h6>
-                      <p>
-                        Engaging with clients to understand their needs and
-                        preferences.
-                      </p>
+                      <h4 className="workflow__step">{`Step ${step.number}`}</h4>
+                      <h5 className="workflow__number">{step.number}</h5>
+                      <h6 className="workflow__title">{step.title}</h6>
+                      <p>{step.description}</p>
                     </div>
                   </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">Step 02</h4>
-                      <h5 className="workflow__number">02</h5>
-                      <h6 className="workflow__title">Blueprint Creation</h6>
-                      <p>
-                        Designing a personalized roadmap to achieve th
-                        clients&apos; goals.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">Step 03</h4>
-                      <h5 className="workflow__number">03</h5>
-                      <h6 className="workflow__title">Skill Mastery</h6>
-                      <p>
-                        Guiding clients through intensive sessions to develop
-                        necessary skills.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">Step 04</h4>
-                      <h5 className="workflow__number">04</h5>
-                      <h6 className="workflow__title">Hands-on Project</h6>
-                      <p>
-                        Applying learned skills in real-world scenarios through
-                        hands-on projects.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">Step 05</h4>
-                      <h5 className="workflow__number">05</h5>
-                      <h6 className="workflow__title">
-                        Feedback and Refinement
-                      </h6>
-                      <p>
-                        Gathering feedback and making adjustments to enhance
-                        results.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">Step 06</h4>
-                      <h5 className="workflow__number">06</h5>
-                      <h6 className="workflow__title">Final Presentation</h6>
-                      <p>
-                        Showcasing the clients&apos achievements in a final
-                        presentation.
-                      </p>
-                    </div>
-                  </SwiperSlide>
-                </div>
+                ))}
               </Swiper>
             </div>
           </div>
@@ -152,4 +129,4 @@ const DigitalAgencyWorkflow = () => {
   );
 };
 
-export default DigitalAgencyWorkflow;
+export default MasteryHouseWorkflow;
