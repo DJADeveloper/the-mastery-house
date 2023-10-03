@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "@/plugins";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -10,8 +10,31 @@ import Hero1bg from "../../../public/assets/imgs/hero/1/1-bg.png";
 import Image from "next/image.js";
 
 const DigitalAgencyHero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   const heroTitle = useRef();
   const heroSubTitle = useRef();
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 767) {
+        // Change 767 to any breakpoint you want for mobile
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    // Run once on component mount to set initial state
+    handleResize();
+
+    // Attach event listener
+    window.addEventListener("resize", handleResize);
+    // Clean-up
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       let tHero = gsap.context(() => {
@@ -52,6 +75,7 @@ const DigitalAgencyHero = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="hero__area ">
@@ -67,7 +91,7 @@ const DigitalAgencyHero = () => {
                 </Link> */}
                 <h2 className="hero__title" ref={heroTitle}>
                   The Mastery
-                  <br />
+                  {!isMobile && <br />}
                   House
                 </h2>
                 {/* <div className="hero__title" ref={heroTitle}>
