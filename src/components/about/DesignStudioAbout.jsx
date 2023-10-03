@@ -64,6 +64,7 @@ const DesignStudioAbout = () => {
                     digital realm and beyond.
                   </p>
                   <br />
+                  &nbsp;
                   <p>
                     Upholding values of Innovation, Integrity, Client Success,
                     and Social Responsibility, we craft a symbiotic relationship

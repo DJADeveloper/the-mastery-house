@@ -120,8 +120,6 @@ export default function Footer3() {
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
                     </div>
-                    <h3 className="contact-time">09 : 00 AM - 10 : 30 PM</h3>
-                    <h4 className="contact-day">Saturday - Thursday</h4>
                   </div>
 
                   <div className="footer__copyright">
