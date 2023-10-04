@@ -13,6 +13,10 @@ import DigitalAgencyBrand from "@/components/brand/DigitalAgencyBrand";
 import DigitalAgencyTestimonial from "@/components/testimonial/DigitalAgencyTestimonial";
 import DigitalAgencyBlog from "@/components/blog/DigitalAgencyBlog";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
+import CreativeAgencyAbout from "@/components/about/CreativeAgencyAbout";
+import DesignStudioAbout from "@/components/about/DesignStudioAbout";
+import ModernAgencyAbout from "@/components/about/ModernAgencyAbout";
+import DigitalMarketingAbout from "@/components/about/DigitalMarketingAbout";
 
 const DigitalAgency = () => {
   const modalTestimonial1 = useRef();
@@ -102,7 +106,7 @@ const DigitalAgency = () => {
             modalClose2={modalClose2}
             modalClose3={modalClose3}
           /> */}
-          {/* <DigitalAgencyBlog /> */}
+          <DigitalAgencyBlog />
           <DigitalAgencyCTA />
         </RootLayout>
       </main>

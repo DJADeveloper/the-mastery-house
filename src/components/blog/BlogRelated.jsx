@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
-import Blog1 from "../../../public/assets/imgs/blog/1.jpg";
-import Blog2 from "../../../public/assets/imgs/blog/2.jpg";
-import Blog3 from "../../../public/assets/imgs/blog/3.jpg";
+import Blog1 from "../../../public/assets/imgs/blog/blog4/blog4-cover.png";
+import Blog2 from "../../../public/assets/imgs/blog/blog5/blog5-cover.png";
+import Blog3 from "../../../public/assets/imgs/blog/blog6/blog6-cover.png";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -69,7 +69,7 @@ const BlogRelated = () => {
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <article className="blog__item">
                 <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
+                  <Link href="/blog-details4">
                     <div className="img-box">
                       <Image
                         priority
@@ -89,17 +89,18 @@ const BlogRelated = () => {
                   </Link>
                 </div>
                 <h4 className="blog__meta sub-title-anim">
-                  <Link href="/category">UI Design</Link> . 02 May 2019
+                  {/* <Link href="/category">SEO MASTERY</Link> . 08 Aug 2023 */}
+                  SEO MASTERY . 08 Oct 2023
                 </h4>
                 <h5>
                   <Link
-                    href="/blog-details"
+                    href="/blog-details4"
                     className="blog__title sub-title-anim"
                   >
-                    Ways of lying to yourself about your new relationship.
+                    Decoding the Power of SEO: Strategies for Maximum Visibility
                   </Link>
                 </h5>
-                <Link href="/blog-details" className="blog__btn">
+                <Link href="/blog-details4" className="blog__btn">
                   Read More{" "}
                   <span>
                     <i className="fa-solid fa-arrow-right"></i>
@@ -111,7 +112,7 @@ const BlogRelated = () => {
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <article className="blog__item" data-speed="auto">
                 <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
+                  <Link href="/blog-details5">
                     <div className="img-box">
                       <Image
                         priority
@@ -131,14 +132,15 @@ const BlogRelated = () => {
                   </Link>
                 </div>
                 <h4 className="blog__meta sub-title-anim">
-                  <Link href="/category">UI Design</Link> . 02 May 2019
+                  {/* <Link href="/category">UI Design</Link> . 02 May 2023 */}
+                  UI Design . 28 Sept 2023
                 </h4>
                 <h5>
                   <Link
-                    href="/blog-details"
+                    href="/blog-details5"
                     className="blog__title sub-title-anim"
                   >
-                    How to manage a talented and successful de sign team
+                    UX/UI Design: Building for the User’s Journey
                   </Link>
                 </h5>
                 <Link href="/blog-details" className="blog__btn">
@@ -153,7 +155,7 @@ const BlogRelated = () => {
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <article className="blog__item" data-speed="auto">
                 <div className="blog__img-wrapper">
-                  <Link href="/blog-details">
+                  <Link href="/blog-details6">
                     <div className="img-box">
                       <Image
                         priority
@@ -173,17 +175,18 @@ const BlogRelated = () => {
                   </Link>
                 </div>
                 <h4 className="blog__meta sub-title-anim">
-                  <Link href="/category">UI Design</Link> . 02 May 2019
+                  {/* <Link href="/category">UI Design</Link> . 10 Sept 2023 */}
+                  UI Design . 10 Sept 2023
                 </h4>
                 <h5>
                   <Link
-                    href="/blog-details"
+                    href="/blog-details6"
                     className="blog__title sub-title-anim"
                   >
-                    How to bring fold to your startup company with Axtra
+                    Storybranding: Crafting Narratives That Connect
                   </Link>
                 </h5>
-                <Link href="/blog-details" className="blog__btn">
+                <Link href="/blog-details6" className="blog__btn">
                   Read More{" "}
                   <span>
                     <i className="fa-solid fa-arrow-right"></i>

@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Author from "../../../public/assets/imgs/blog/detail/author.svg";
-import Detail1 from "../../../public/assets/imgs/blog/detail/1.png";
-import Detail2 from "../../../public/assets/imgs/blog/detail/2.jpg";
-import Detail3 from "../../../public/assets/imgs/blog/detail/3.jpg";
+import Detail1 from "../../../public/assets/imgs/blog/blog1/blog11.png";
+import Detail2 from "../../../public/assets/imgs/blog/blog1/blog12.png";
+import Detail3 from "../../../public/assets/imgs/blog/blog1/blog13.png";
+
 import { useEffect, useRef } from "react";
 import animationWordCome from "@/lib/utils/animationWordCome";
 
@@ -27,13 +28,13 @@ const BlogDetails1 = () => {
                   className="blog__detail-date animation__word_come"
                   ref={wordAnim}
                 >
-                  Social Media Marketing <span>18 Sep 2023</span>
+                  Digital Landscape <span>18 Sep 2023</span>
                 </h2>
                 <h3
                   className="blog__detail-title animation__word_come"
                   ref={wordAnim2}
                 >
-                  Level Up Your Startup with a Robust Social Media Strategy
+                  Decoding the Success DNA: The Digital Landscape in 2023
                 </h3>
                 <div className="blog__detail-metalist">
                   <div className="blog__detail-meta">
@@ -44,12 +45,12 @@ const BlogDetails1 = () => {
                       alt="Author Picture"
                     />
                     <p>
-                      Written by <span>Darryl Adams</span>
+                      Written by <span>The Mastery House Team</span>
                     </p>
                   </div>
                   <div className="blog__detail-meta">
                     <p>
-                      Viewed <span>3 min read</span>
+                      Viewed <span>4 min read</span>
                     </p>
                   </div>
                 </div>
@@ -61,7 +62,7 @@ const BlogDetails1 = () => {
                   priority
                   style={{ width: "auto", height: "auto" }}
                   src={Detail1}
-                  alt="Blog Thumbnail"
+                  alt="Digital Transformation Illustration"
                   data-speed="0.5"
                 />
               </div>
@@ -69,73 +70,71 @@ const BlogDetails1 = () => {
             <div className="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
               <div className="blog__detail-content">
                 <p>
-                  A well-executed social media marketing strategy can be a
-                  game-changer, especially for startups aiming to carve out a
-                  niche in a competitive market. The first step on this journey
-                  involves identifying your target audience and choosing the
-                  right platforms to reach them.
+                  In an ever-evolving digital realm, 2023 marks a year of
+                  significant transformation. With technology driving
+                  innovations at lightning speed, it's crucial to decode the
+                  "success DNA" of this landscape.
                 </p>
+                <h2>The Advent of AI-driven Solutions</h2>
                 <p>
-                  In the hyper-connected world we live in, communication and
-                  consistency are key. Maintaining a regular posting schedule
-                  not only ensures a steady stream of content but also helps in
-                  building a community around your brand. Encourage
-                  user-generated content and interact with your followers to
-                  foster a deeper connection.
+                  AI has moved from being a mere buzzword to a pivotal element
+                  in business strategies. Companies leveraging AI-driven
+                  insights are outpacing competitors, refining customer
+                  experiences, and optimizing operations. The era of intelligent
+                  analytics, chatbots, and predictive behavior models is upon
+                  us, shaping the future.
                 </p>
                 <Image
                   priority
                   width={850}
                   style={{ height: "auto" }}
                   src={Detail2}
-                  alt="Social Media Icons"
+                  alt="AI Solutions"
                 />
-                <h2>Paid Advertising and Influencer Partnerships</h2>
+                <h2>Quantum Leap with Quantum Computing</h2>
                 <p>
-                  Leveraging paid advertising and forging influencer
-                  partnerships can amplify your startup&apos;s reach, bringing
-                  your message to a broader audience. However, the strategies
-                  don&apos;t end here; analyzing performance metrics and
-                  continually adjusting your approach is vital for sustained
-                  growth.
+                  Quantum computing, although in its nascent stage, is promising
+                  a revolution. It's anticipated to solve complex problems in
+                  seconds, which traditional computers might take millennia to
+                  crack.
                 </p>
-                <h2>Analytics and Continuous Improvement</h2>
+                <h2>Augmented Reality: Merging Worlds</h2>
                 <p>
-                  By diving deep into performance analytics, you can understand
-                  what works for your brand and what doesn&apos;t, allowing for
-                  informed decisions and refined strategies. This process of
-                  analysis and adjustment is central to evolving and improving
-                  your social media marketing strategy over time.
+                  Augmented reality (AR) is enhancing user experiences, from
+                  gaming to online shopping. It's not just about overlaying
+                  information but creating interactive and immersive
+                  environments for users.
                 </p>
-                <ul>
-                  <li>Target Audience Analysis</li>
-                  <li>Content Strategy</li>
-                  <li>User Engagement</li>
-                  <li>Influencer Partnerships</li>
-                  <li>Performance Analytics</li>
-                </ul>
-                <h2>Get Started with The Mastery House</h2>
+                <h2>Cybersecurity: The Invisible Shield</h2>
                 <p>
-                  Ready to elevate your startup&apos;s online presence? The
-                  Mastery House is here to support your business success with a
-                  custom website design crafted just for you. Based in Florida,
-                  we offer a range of digital solutions, including web
-                  development services in Tampa. Connect with us and stay
-                  competitive in the online landscape.
+                  With great digital power comes great responsibility.
+                  Cybersecurity is no longer optional; it's a necessity.
+                  Ensuring data protection, privacy, and building trust among
+                  users is of paramount importance.
+                </p>
+                <h2>Sustainable Tech: Going Green</h2>
+                <p>
+                  The call for sustainability is echoing louder than ever. Green
+                  technologies, eco-friendly hosting solutions, and
+                  energy-saving algorithms are carving a niche, aligning
+                  profitability with responsibility.
                 </p>
                 <Image
                   priority
                   width={850}
                   style={{ height: "auto" }}
                   src={Detail3}
-                  alt="Mastery House Banner"
+                  alt="Sustainable Tech"
                 />
               </div>
               <div className="blog__detail-tags">
                 <p className="sub-title-anim">
-                  tags: <Link href="/blog">Social Media Marketing</Link>,{" "}
-                  <Link href="/blog">Startup Strategy</Link>,
-                  <Link href="/tag">Digital Solutions</Link>
+                  tags: <Link href="/blog">Digital Trends</Link>,{" "}
+                  <Link href="/blog">AI</Link>,{" "}
+                  <Link href="/blog">Quantum Computing</Link>,{" "}
+                  <Link href="/tag">AR</Link>,{" "}
+                  <Link href="/tag">Cybersecurity</Link>,{" "}
+                  <Link href="/tag">Sustainability</Link>
                 </p>
               </div>
             </div>
