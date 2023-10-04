@@ -617,12 +617,12 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
           </div>
           <div className="offcanvas__right">
             <div className="offcanvas__search">
-              <form action="#">
+              {/* <form action="#">
                 <input type="text" name="search" placeholder="Search keyword" />
                 <button>
                   <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
                 </button>
-              </form>
+              </form> */}
             </div>
             <div className="offcanvas__contact">
               <h3>Get in touch</h3>
