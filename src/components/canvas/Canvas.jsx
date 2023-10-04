@@ -68,11 +68,14 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             <div className="offcanvas__social">
               <h3 className="social-title">Follow Us</h3>
               <ul>
-                {/* <li>
-                  <a href="linkedin.com/company/98874462" target="_blank">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/the-mastery-house-727664204/"
+                    target="_blank"
+                  >
                     LinkedIn
                   </a>
-                </li> */}
+                </li>
                 <li>
                   <a href="https://www.instagram.com/themasteryhouse/">
                     Instagram
