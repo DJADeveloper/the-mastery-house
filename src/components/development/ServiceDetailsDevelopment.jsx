@@ -18,7 +18,7 @@ const ServiceDetailsDevelopment = () => {
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title animation__char_come" ref={charAnim}>
-                  Web and mobile development
+                  Comprehensive Web & Mobile Development Services
                 </h2>
               </div>
             </div>
@@ -26,23 +26,29 @@ const ServiceDetailsDevelopment = () => {
               <div className="development__wrapper">
                 <div className="development__content">
                   <p>
-                    Every decision we make needs to answer the million-dollar
-                    question: how will this benefit our partner’s goal best? We
-                    work to develop solutions
+                    Our team at The Mastery House adopts a meticulous approach
+                    to web and mobile development. Every decision aligns with
+                    the primary objective: optimizing for our partner's success.
+                    We delve deep, understanding the intricacies of your
+                    business to provide bespoke solutions tailored for maximum
+                    impact.
                   </p>
                   <p>
-                    We like to be different, in the same way that every mission
-                    is different. Every project is an opportunity to create
-                    result that will help you
+                    In an era where uniqueness sets brands apart, we ensure
+                    every project is a fresh opportunity to innovate. Through
+                    our expertise and dedication, we not only provide
+                    development solutions but ensure they translate to tangible
+                    results for your business, fostering growth and prominence
+                    in the digital realm.
                   </p>
                 </div>
                 <ul>
-                  <li>+ API Development</li>
-                  <li>+ WordPress</li>
-                  <li>+ Cloud Migration</li>
-                  <li>+ Front End Development</li>
-                  <li>+ JavaScript</li>
-                  <li>+ Fluter Framework</li>
+                  <li>+ API Development & Integration</li>
+                  <li>+ Custom WordPress Development</li>
+                  <li>+ Seamless Cloud Migration & Solutions</li>
+                  <li>+ Dynamic Front End Development</li>
+                  <li>+ Advanced JavaScript Frameworks</li>
+                  <li>+ Mobile Development with Flutter Framework</li>
                 </ul>
               </div>
             </div>
@@ -52,7 +58,7 @@ const ServiceDetailsDevelopment = () => {
                   priority
                   style={{ width: "auto", height: "auto" }}
                   src={ThumbDev1}
-                  alt="Development Image"
+                  alt="Web Development Visualization"
                   data-speed="auto"
                 />
               </div>
@@ -63,7 +69,7 @@ const ServiceDetailsDevelopment = () => {
                   priority
                   style={{ width: "auto", height: "auto" }}
                   src={ThumbDev2}
-                  alt="Development Image"
+                  alt="Mobile Development Visualization"
                 />
               </div>
             </div>

@@ -3,8 +3,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger, ScrollSmoother } from "@/plugins";
 import Link from "next/link";
 import Image from "next/image";
-import About11 from "../../../public/assets/imgs/about/1/5.png";
-import About12 from "../../../public/assets/imgs/about/1/4.png";
+import About11 from "../../../public/assets/imgs/about/1/1.jpg";
+import About12 from "../../../public/assets/imgs/about/1/3.png";
+import logo from "../../../public/assets/imgs/logo/site-logo-white-sideways.png";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -54,8 +55,8 @@ const DigitalAgencyAbout = () => {
                     <Image
                       priority
                       width={220}
-                      style={{ height: "auto" }}
-                      src={About12}
+                      style={{ height: "auto", width: "auto" }}
+                      src={logo}
                       alt="A collage showcasing different milestones achieved by The Mastery House"
                       data-speed="0.5"
                     />

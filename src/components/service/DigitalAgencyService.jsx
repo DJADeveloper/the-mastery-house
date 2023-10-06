@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
-import Service11 from "../../../public/assets/imgs/service/1/1.png";
-import Service12 from "../../../public/assets/imgs/service/1/2.png";
-import Service13 from "../../../public/assets/imgs/service/1/3.png";
-import Service14 from "../../../public/assets/imgs/service/1/4.png";
+import Service11 from "../../../public/assets/imgs/service/1/website.jpg";
+import Service12 from "../../../public/assets/imgs/service/1/interactive-design.jpg";
+import Service13 from "../../../public/assets/imgs/service/1/digital-marketing.jpg";
+import Service14 from "../../../public/assets/imgs/service/1/storybranding.jpg";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,29 +15,29 @@ const DigitalAgencyService = () => {
   const [activeImg, setActiveImg] = useState(1);
   const [activeShape, setActiveShape] = useState(1);
 
-  const serviceList = useRef();
+  const serviceList = useRef(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      let listItem = serviceList.current.children;
-      console.log(listItem);
-      for (let i = 0; i < listItem.length; i++) {
-        listItem[i].addEventListener("mousemove", function (e) {
-          var service_id = this.getAttribute("data-service");
+    if (serviceList.current) {
+      let listItems = serviceList.current.children;
+
+      for (let item of listItems) {
+        item.addEventListener("mouseenter", function (e) {
+          let service_id = this.getAttribute("data-service");
           setActiveImg(parseInt(service_id));
           setActiveShape(parseInt(service_id));
-
           if (service_id != 1) {
             setActiveList(0);
           }
         });
 
-        listItem[i].addEventListener("mouseout", function (e) {
-          var service_id = this.getAttribute("data-service");
+        item.addEventListener("mouseleave", function (e) {
+          let service_id = this.getAttribute("data-service");
           setActiveList(parseInt(service_id));
         });
       }
 
+      // Your GSAP animations
       let tHero = gsap.timeline({
         scrollTrigger: {
           trigger: ".service__area",
@@ -81,11 +81,8 @@ const DigitalAgencyService = () => {
               <div className="service__top-text text-anim">
                 <p>
                   With every single one of our clients we bring forth a deep
-                  passion for{" "}
-                  <span>
-                    creative problem-solving and forward-thinking brands that
-                    push boundaries
-                  </span>
+                  passion for creative problem-solving and forward-thinking
+                  brands that push boundaries
                 </p>
               </div>
             </div>
@@ -113,9 +110,9 @@ const DigitalAgencyService = () => {
                     width={280}
                     style={{ height: "auto" }}
                     src={Service11}
-                    alt="Service Image"
+                    alt="Web & Mobile Development Image"
                     className={
-                      activeImg == 1
+                      activeImg === 1
                         ? "service__img img-1 active"
                         : "service__img img-1"
                     }
@@ -125,9 +122,9 @@ const DigitalAgencyService = () => {
                     width={280}
                     style={{ height: "auto" }}
                     src={Service12}
-                    alt="Service Image"
+                    alt="Interaction Design Image"
                     className={
-                      activeImg == 2
+                      activeImg === 2
                         ? "service__img img-2 active"
                         : "service__img img-2"
                     }
@@ -137,9 +134,9 @@ const DigitalAgencyService = () => {
                     width={280}
                     style={{ height: "auto" }}
                     src={Service13}
-                    alt="Service Image"
+                    alt="Digital Marketing Image"
                     className={
-                      activeImg == 3
+                      activeImg === 3
                         ? "service__img img-3 active"
                         : "service__img img-3"
                     }
@@ -149,9 +146,9 @@ const DigitalAgencyService = () => {
                     width={280}
                     style={{ height: "auto" }}
                     src={Service14}
-                    alt="Service Image"
+                    alt="Branding and Strategy Image"
                     className={
-                      activeImg == 4
+                      activeImg === 4
                         ? "service__img img-4 active"
                         : "service__img img-4"
                     }
@@ -160,11 +157,10 @@ const DigitalAgencyService = () => {
               </div>
 
               <div className="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
-                <div className="service__list text-anim">
+                <div ref={serviceList} className="service__list text-anim">
                   <div
-                    ref={serviceList}
                     className={
-                      activeList == 1
+                      activeList === 1
                         ? "service__list-item active"
                         : "service__list-item"
                     }
@@ -174,19 +170,15 @@ const DigitalAgencyService = () => {
                       Web & Mobile Development
                     </h4>
                     <p>
-                      Elevate your online presence with our cutting-edge web and
-                      mobile development services. We specialize in crafting
-                      high-performance websites and mobile apps that offer
-                      seamless user experiences on any device. Let us turn your
-                      vision into a digital reality that stands out in the
-                      competitive market.
+                      Craft high-performance websites and apps with our tailored
+                      development services. Experience seamless digital
+                      solutions that resonate on any device.
                     </p>
                   </div>
 
                   <div
-                    ref={serviceList}
                     className={
-                      activeList == 2
+                      activeList === 2
                         ? "service__list-item active"
                         : "service__list-item"
                     }
@@ -194,19 +186,15 @@ const DigitalAgencyService = () => {
                   >
                     <h4 style={{ color: "#00ffd0" }}>Interaction Design</h4>
                     <p>
-                      Transform user experiences with our interaction design
-                      services. We focus on creating intuitive user interfaces
-                      that foster engagement and satisfaction. By prioritizing
-                      usability and functionality, we design interactions that
-                      not only look great but also work flawlessly, enhancing
-                      user satisfaction and boosting conversion rates.
+                      Redefine user engagement with intuitive interfaces. Our
+                      designs prioritize usability, ensuring flawless
+                      interactions that boost conversions.
                     </p>
                   </div>
 
                   <div
-                    ref={serviceList}
                     className={
-                      activeList == 3
+                      activeList === 3
                         ? "service__list-item active"
                         : "service__list-item"
                     }
@@ -214,19 +202,15 @@ const DigitalAgencyService = () => {
                   >
                     <h4 style={{ color: "#00ffd0" }}>Digital Marketing</h4>
                     <p>
-                      Expand your reach and drive business growth with our
-                      comprehensive digital marketing services. From SEO
-                      optimization to content creation and social media
-                      management, we craft bespoke marketing strategies that
-                      resonate with your target audience, foster engagement, and
-                      drive measurable results.
+                      Broaden your horizons with our holistic marketing
+                      strategies. From SEO to content and social media, we
+                      deliver tailored campaigns for impactful results.
                     </p>
                   </div>
 
                   <div
-                    ref={serviceList}
                     className={
-                      activeList == 4
+                      activeList === 4
                         ? "service__list-item active"
                         : "service__list-item"
                     }
@@ -234,12 +218,9 @@ const DigitalAgencyService = () => {
                   >
                     <h4 style={{ color: "#00ffd0" }}>Branding and Strategy</h4>
                     <p>
-                      Build a recognizable and trusted brand with our branding
-                      and strategy services. We work closely with you to
-                      understand your vision, define your unique selling points,
-                      and craft a brand identity that resonates with your target
-                      audience. Our strategies are data-driven, ensuring a
-                      roadmap to success that aligns with your business goals.
+                      Shape a memorable brand aligned with your vision. We
+                      devise data-driven strategies, cementing your brand's
+                      place in the market.
                     </p>
                   </div>
                 </div>

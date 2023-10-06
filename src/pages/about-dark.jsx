@@ -23,7 +23,7 @@ const AboutDark = () => {
         <RootLayout defaultMode="dark">
           {/* test */}
           <ModernAgencyAbout />
-          <CreativeAgencyAbout />
+          {/* <CreativeAgencyAbout /> */}
           <DesignStudioAbout />
 
           {/* test */}

@@ -198,11 +198,6 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                     </div>
                   </li>
                   <li>
-                    <div className="header_title">
-                      <Link href={"/blog-dark"}>Blog</Link>
-                    </div>
-                  </li>
-                  <li>
                     <div className="header_title d-flex">
                       <Link href={"/service-v6-dark"}>SERVICE</Link>
                       {/* <div className="accordian-btn">
@@ -264,6 +259,11 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                         </Link>
                       </li>
                     </ul>
+                  </li>
+                  <li>
+                    <div className="header_title">
+                      <Link href={"/blog-dark"}>Blog</Link>
+                    </div>
                   </li>
                   {/* <li>
                     <div className="header_title d-flex">

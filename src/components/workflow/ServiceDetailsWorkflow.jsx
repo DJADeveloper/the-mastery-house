@@ -9,12 +9,11 @@ const ServiceDetailsWorkflow = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    Planning and <br />
-                    sketching
+                    Requirement <br /> Analysis
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    Before diving into development, we deeply analyze your
+                    business needs to ensure we craft the perfect solution.
                   </p>
                 </div>
               </div>
@@ -22,12 +21,11 @@ const ServiceDetailsWorkflow = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    Team <br />
-                    working
+                    Design & <br /> Prototyping
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    We design intuitive interfaces, keeping the end-user in
+                    mind, and prototype to visualize the end product.
                   </p>
                 </div>
               </div>
@@ -35,12 +33,11 @@ const ServiceDetailsWorkflow = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    Flowchart and <br />
-                    wireframe
+                    Development & <br /> Testing
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    With an agile approach, we ensure robust development and
+                    thorough testing for a seamless product.
                   </p>
                 </div>
               </div>
@@ -48,12 +45,11 @@ const ServiceDetailsWorkflow = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    User experience <br />
-                    Testing
+                    Deployment & <br /> Support
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    Post-development, we assist in deployment and provide
+                    ongoing support for continuous improvement.
                   </p>
                 </div>
               </div>

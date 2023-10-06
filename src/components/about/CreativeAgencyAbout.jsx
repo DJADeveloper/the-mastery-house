@@ -89,18 +89,30 @@ const CreativeAgencyAbout = () => {
           <div className="row d-flex justify-content-center">
             <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-9">
               <div className={aboutMidClasses}>
-                <p>
-                  At The Mastery House, our journey began with a singular
-                  vision: to empower businesses by unlocking their digital
-                  potential...
-                </p>
-                <p>
-                  Our story is one of relentless determination and a pursuit of
-                  excellence, underpinned by our core belief that &quot;Your
-                  Success is Our Code.&quot; At The Mastery House, we don’t just
-                  build digital experiences; we build connections, fostering
-                  relationships with our clients...
-                </p>
+                <div className="d-flex flex-column flex-md-row justify-content-between">
+                  <p className="col-md-6 pr-md-3">
+                    At The Mastery House, our journey began with a vision: to
+                    empower businesses by unlocking their potential in the
+                    digital landscape. With innovation at our core, we
+                    seamlessly blend creativity with technology, creating
+                    solutions that set new benchmarks and drive growth for our
+                    clients. Our team of dedicated professionals, equipped with
+                    in-depth knowledge and vast experience, collaborate closely
+                    with our partners, ensuring that every project we undertake
+                    not only meets but exceeds expectations. We believe in a
+                    holistic approach, focusing on understanding our clients'
+                    needs and tailoring solutions that align with their goals.
+                  </p>
+                  <p className="col-md-6 pl-md-3">
+                    Our story is a testament to relentless determination and a
+                    pursuit of excellence. It's a narrative driven by our belief
+                    that "Your Success is Our Code." Beyond developing digital
+                    experiences, at The Mastery House, we prioritize building
+                    enduring connections, nurturing and fostering relationships
+                    with our clientele, ensuring we grow together in this
+                    digital age.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

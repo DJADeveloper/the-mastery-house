@@ -12,8 +12,7 @@ const ServiceDetailsService = () => {
             <div className="col-xxl-12">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title title-anim">
-                  We replace unreliable wirefreme and expensive agencies for one
-                  of the best organized layer.
+                  Tailored Web and Software Solutions for Modern Businesses.
                 </h2>
               </div>
             </div>
@@ -42,15 +41,15 @@ const ServiceDetailsService = () => {
               </div>
               <div className="service__detail-content">
                 <p>
-                  {
-                    "Receive your design within a few business days, and be updated on the process. Everything you need for a digitally driven brand. Defined proposition. Conceptual realisation. Logo, type, look, feel, tone, movement, content - we've got it covered."
-                  }
+                  Harness the power of the latest web technologies with us. From
+                  brainstorming the initial idea to the final deployment, our
+                  experts provide end-to-end web and software development
+                  solutions.
                 </p>
                 <p>
-                  Getting your brand message out there. We create dynamic
-                  campaign creative that engages audiences, wherever they are
-                  most talented. Bring your brand to life, communicate your
-                  value proposition with agile setup across creativity.
+                  Driven by passion and innovation, we ensure that our software
+                  solutions are robust, scalable, and tailor-made to your
+                  business needs.
                 </p>
               </div>
             </div>
