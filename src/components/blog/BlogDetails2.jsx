@@ -81,7 +81,6 @@ const BlogDetails2 = () => {
                   benefits? Higher engagement, reduced bounce rates, and a
                   significant boost in conversions.
                 </p>
-
                 <Image
                   priority
                   width={850}
@@ -105,17 +104,17 @@ const BlogDetails2 = () => {
                 </p>
                 <h2>Data Privacy: The Double-Edged Sword</h2>
                 <p>
-                  While personalization enhances user experience, it's vital to
-                  strike a balance with data privacy. GDPR, CCPA, and other
-                  regulations necessitate transparent data collection practices
-                  and the assurance of data security.
+                  While personalization enhances user experience, it&apos;s
+                  vital to strike a balance with data privacy. GDPR, CCPA, and
+                  other regulations necessitate transparent data collection
+                  practices and the assurance of data security.
                 </p>
                 <h2>Get Personal with The Mastery House</h2>
                 <p>
                   Looking to create a personalized digital experience for your
                   users? The Mastery House crafts tailored web designs that
                   resonate, engage, and convert. Connect with our team and give
-                  your users an experience they'll never forget.
+                  your users an experience they&apos;ll never forget.
                 </p>
                 <Image
                   priority

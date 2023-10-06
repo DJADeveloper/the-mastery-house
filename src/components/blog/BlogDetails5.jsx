@@ -91,7 +91,7 @@ const BlogDetails5 = () => {
                 />
                 <h2>Consistency is Key</h2>
                 <p>
-                  A consistent design promotes familiarity. Whether it's a
+                  A consistent design promotes familiarity. Whether it&apos;s a
                   consistent color scheme, typography, or layout, ensuring
                   uniformity across your platform enhances the user experience.
                 </p>
@@ -106,7 +106,7 @@ const BlogDetails5 = () => {
                 <p>
                   Looking to elevate your digital presence with impeccable UX/UI
                   design? The Mastery House is committed to crafting
-                  user-centric designs that resonate and engage. Let's
+                  user-centric designs that resonate and engage. Let&apos;s
                   collaborate and make your digital vision a reality.
                 </p>
                 <Image

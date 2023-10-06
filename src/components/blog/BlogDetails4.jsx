@@ -115,8 +115,8 @@ const BlogDetails4 = () => {
                 <p>
                   Want to unlock the full potential of SEO for your brand? The
                   Mastery House team offers tailored SEO solutions to boost your
-                  visibility and drive organic traffic. Let's connect and craft
-                  a strategy that resonates with your business objectives.
+                  visibility and drive organic traffic. Let&apos;s connect and
+                  craft a strategy that resonates with your business objectives.
                 </p>
                 <Image
                   priority

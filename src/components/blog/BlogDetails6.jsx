@@ -70,10 +70,10 @@ const BlogDetails6 = () => {
               <div className="blog__detail-content">
                 <p>
                   In a world brimming with content and information, storytelling
-                  emerges as a beacon of connection. Storybranding isn't just
-                  about promoting products; it&apos;s about creating authentic
-                  narratives that resonate with audiences on a deeper, emotional
-                  level.
+                  emerges as a beacon of connection. Storybranding isn&apos;t
+                  just about promoting products; it&apos;s about creating
+                  authentic narratives that resonate with audiences on a deeper,
+                  emotional level.
                 </p>
                 <h2>More than Marketing</h2>
                 <p>
@@ -97,12 +97,13 @@ const BlogDetails6 = () => {
                   a memorable identity and cultivate lasting relationships with
                   their audience.
                 </p>
-                <h2>Let's Craft Your Brand's Story</h2>
+                <h2>Let&apos;s Craft Your Brand&apos;s Story</h2>
                 <p>
-                  At The Mastery House, we're passionate about stories. We'll
-                  help you delve into the core of your brand, unraveling tales
-                  that inspire and captivate. Let's connect, share, and grow
-                  together through the magic of storybranding.
+                  At The Mastery House, we&apos;re passionate about stories.
+                  We&apos;ll help you delve into the core of your brand,
+                  unraveling tales that inspire and captivate. Let&apos;s
+                  connect, share, and grow together through the magic of
+                  storybranding.
                 </p>
                 <Image
                   priority

@@ -72,8 +72,8 @@ const BlogDetails1 = () => {
                 <p>
                   In an ever-evolving digital realm, 2023 marks a year of
                   significant transformation. With technology driving
-                  innovations at lightning speed, it's crucial to decode the
-                  &quot;success DNA&quot; of this landscape.
+                  innovations at lightning speed, it&apos;s crucial to decode
+                  the &quot;success DNA&quot; of this landscape.
                 </p>
                 <h2>The Advent of AI-driven Solutions</h2>
                 <p>
@@ -84,7 +84,6 @@ const BlogDetails1 = () => {
                   analytics, chatbots, and predictive behavior models is upon
                   us, shaping the future.
                 </p>
-
                 <Image
                   priority
                   width={850}
@@ -95,21 +94,21 @@ const BlogDetails1 = () => {
                 <h2>Quantum Leap with Quantum Computing</h2>
                 <p>
                   Quantum computing, although in its nascent stage, is promising
-                  a revolution. It's anticipated to solve complex problems in
-                  seconds, which traditional computers might take millennia to
-                  crack.
+                  a revolution. It&apos;s anticipated to solve complex problems
+                  in seconds, which traditional computers might take millennia
+                  to crack.
                 </p>
                 <h2>Augmented Reality: Merging Worlds</h2>
                 <p>
                   Augmented reality (AR) is enhancing user experiences, from
-                  gaming to online shopping. It's not just about overlaying
+                  gaming to online shopping. It&apos;s not just about overlaying
                   information but creating interactive and immersive
                   environments for users.
                 </p>
                 <h2>Cybersecurity: The Invisible Shield</h2>
                 <p>
                   With great digital power comes great responsibility.
-                  Cybersecurity is no longer optional; it's a necessity.
+                  Cybersecurity is no longer optional; it&apos;s a necessity.
                   Ensuring data protection, privacy, and building trust among
                   users is of paramount importance.
                 </p>
