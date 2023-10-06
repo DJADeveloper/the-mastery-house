@@ -70,17 +70,18 @@ const BlogDetails5 = () => {
               <div className="blog__detail-content">
                 <p>
                   At the heart of every impactful digital experience lies
-                  thoughtful UX/UI design. It's a delicate balance between
+                  thoughtful UX/UI design. It&apos;s a delicate balance between
                   functionality and aesthetics, shaping the way users interact
                   with and perceive your brand.
                 </p>
-                <h2>Understanding the User's Perspective</h2>
+                <h2>Understanding the User&apos;s Perspective</h2>
                 <p>
                   The foundation of any UX/UI design should be a deep
                   understanding of the end user. Their needs, preferences, and
                   pain points guide the design process, ensuring the final
                   product is intuitive and user-centric.
                 </p>
+
                 <Image
                   priority
                   width={850}

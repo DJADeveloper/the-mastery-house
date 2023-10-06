@@ -71,7 +71,7 @@ const BlogDetails6 = () => {
                 <p>
                   In a world brimming with content and information, storytelling
                   emerges as a beacon of connection. Storybranding isn't just
-                  about promoting products; it's about creating authentic
+                  about promoting products; it&apos;s about creating authentic
                   narratives that resonate with audiences on a deeper, emotional
                   level.
                 </p>
@@ -79,9 +79,10 @@ const BlogDetails6 = () => {
                 <p>
                   Storybranding transcends traditional marketing. Instead of
                   focusing solely on features and benefits, it presents a
-                  journey – one where the brand and the audience embark on a
-                  shared adventure.
+                  journey &ndash; one where the brand and the audience embark on
+                  a shared adventure.
                 </p>
+
                 <Image
                   priority
                   width={850}

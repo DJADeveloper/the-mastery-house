@@ -100,17 +100,18 @@ const CreativeAgencyAbout = () => {
                     in-depth knowledge and vast experience, collaborate closely
                     with our partners, ensuring that every project we undertake
                     not only meets but exceeds expectations. We believe in a
-                    holistic approach, focusing on understanding our clients'
-                    needs and tailoring solutions that align with their goals.
+                    holistic approach, focusing on understanding our
+                    clients&apos; needs and tailoring solutions that align with
+                    their goals.
                   </p>
                   <p className="col-md-6 pl-md-3">
                     Our story is a testament to relentless determination and a
-                    pursuit of excellence. It's a narrative driven by our belief
-                    that "Your Success is Our Code." Beyond developing digital
-                    experiences, at The Mastery House, we prioritize building
-                    enduring connections, nurturing and fostering relationships
-                    with our clientele, ensuring we grow together in this
-                    digital age.
+                    pursuit of excellence. It&apos;s a narrative driven by our
+                    belief that &quot;Your Success is Our Code.&quot; Beyond
+                    developing digital experiences, at The Mastery House, we
+                    prioritize building enduring connections, nurturing and
+                    fostering relationships with our clientele, ensuring we grow
+                    together in this digital age.
                   </p>
                 </div>
               </div>

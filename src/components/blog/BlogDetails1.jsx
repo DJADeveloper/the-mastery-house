@@ -73,7 +73,7 @@ const BlogDetails1 = () => {
                   In an ever-evolving digital realm, 2023 marks a year of
                   significant transformation. With technology driving
                   innovations at lightning speed, it's crucial to decode the
-                  "success DNA" of this landscape.
+                  &quot;success DNA&quot; of this landscape.
                 </p>
                 <h2>The Advent of AI-driven Solutions</h2>
                 <p>
@@ -84,6 +84,7 @@ const BlogDetails1 = () => {
                   analytics, chatbots, and predictive behavior models is upon
                   us, shaping the future.
                 </p>
+
                 <Image
                   priority
                   width={850}

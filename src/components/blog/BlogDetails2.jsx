@@ -75,12 +75,13 @@ const BlogDetails2 = () => {
                 </p>
                 <h2>The Rise of Individual-Centric Web Experiences</h2>
                 <p>
-                  Gone are the days of generic websites. Today's user expects an
-                  experience that speaks to them directly, understands their
-                  needs, and offers solutions intuitively. The benefits? Higher
-                  engagement, reduced bounce rates, and a significant boost in
-                  conversions.
+                  Gone are the days of generic websites. Today&apos;s user
+                  expects an experience that speaks to them directly,
+                  understands their needs, and offers solutions intuitively. The
+                  benefits? Higher engagement, reduced bounce rates, and a
+                  significant boost in conversions.
                 </p>
+
                 <Image
                   priority
                   width={850}

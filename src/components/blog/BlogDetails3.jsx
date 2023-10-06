@@ -69,18 +69,19 @@ const BlogDetails3 = () => {
             <div className="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
               <div className="blog__detail-content">
                 <p>
-                  Storytelling is an ancient art, but its power in the digital
-                  age has never been more significant. Visual storytelling in
-                  branding weaves a narrative that captures the essence of a
-                  brand, making it memorable and relatable.
+                  The realm of web design has transcended aesthetics. Modern web
+                  experiences hinge on personalization, creating tailor-made
+                  solutions that resonate deeply with the end-user.
                 </p>
-                <h2>More than Just a Logo</h2>
+                <h2>The Rise of Individual-Centric Web Experiences</h2>
                 <p>
-                  A brand's story is more than its logo or color palette. It's
-                  the emotions, values, and experiences associated with it.
-                  Visual elements play a pivotal role in conveying these
-                  sentiments efficiently.
+                  Gone are the days of generic websites. Today&apos;s user
+                  expects an experience that speaks to them directly,
+                  understands their needs, and offers solutions intuitively. The
+                  benefits? Higher engagement, reduced bounce rates, and a
+                  significant boost in conversions.
                 </p>
+
                 <Image
                   priority
                   width={850}

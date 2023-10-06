@@ -28,10 +28,10 @@ const ServiceDetailsDevelopment = () => {
                   <p>
                     Our team at The Mastery House adopts a meticulous approach
                     to web and mobile development. Every decision aligns with
-                    the primary objective: optimizing for our partner's success.
-                    We delve deep, understanding the intricacies of your
-                    business to provide bespoke solutions tailored for maximum
-                    impact.
+                    the primary objective: optimizing for our partner&apos;s
+                    success. We delve deep, understanding the intricacies of
+                    your business to provide bespoke solutions tailored for
+                    maximum impact.
                   </p>
                   <p>
                     In an era where uniqueness sets brands apart, we ensure
