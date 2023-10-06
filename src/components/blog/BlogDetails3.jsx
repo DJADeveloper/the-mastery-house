@@ -93,18 +93,18 @@ const BlogDetails3 = () => {
               />
               <h2>The Emotional Connection</h2>
               <p>
-                Humans are visual creatures. We're drawn to stories, especially
-                those that evoke emotion. Brands that can harness this human
-                tendency through visual storytelling can create lasting
-                connections.
+                Humans are visual creatures. We&apos;re drawn to stories,
+                especially those that evoke emotion. Brands that can harness
+                this human tendency through visual storytelling can create
+                lasting connections.
               </p>
               <h2>Consistency Across Touchpoints</h2>
               <p>
-                Whether it's your website, social media profiles, or marketing
-                materials, consistent visual storytelling ensures a unified
-                brand perception, enhancing trust and reliability.
+                Whether it&apos;s your website, social media profiles, or
+                marketing materials, consistent visual storytelling ensures a
+                unified brand perception, enhancing trust and reliability.
               </p>
-              <h2>Embrace Your Brand's Journey</h2>
+              <h2>Embrace Your Brand&apos;s Journey</h2>
               <p>
                 Every brand has a unique journey, challenges, victories, and
                 values. Sharing this journey visually can be a potent tool for
