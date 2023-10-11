@@ -199,7 +199,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                   </li>
                   <li>
                     <div className="header_title d-flex">
-                      <Link href={"/service-v5-dark"}>SERVICE</Link>
+                      <Link href={"/service-v5-dark"}>SERVICES</Link>
                       <div className="accordian-btn">
                         {accordion === 3 ? (
                           <a onClick={() => openData(0)}>-</a>
