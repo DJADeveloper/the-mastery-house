@@ -68,9 +68,10 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
           modules={[Mousewheel, EffectFade, Pagination]}
           spaceBetween={0}
           effect={"fade"}
+          loop={true}
           mousewheel={true}
           allowTouchMove={false}
-          slidesperview={1}
+          slidesPerview={1}
           pagination={{
             el: ".swiper-pagination",
             clickable: true,
@@ -424,7 +425,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
           <SwiperSlide>
             <section className=" portfolio-section " ref={portfolioSection}>
               <div className="container ">
-                <div className="row pt-140 ">
+                <div className="row pt-100 ">
                   <div className="col-xxl-12 d-flex">
                     <div className="portfolio__hero ">
                       <div>

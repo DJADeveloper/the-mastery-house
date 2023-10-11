@@ -199,14 +199,14 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                   </li>
                   <li>
                     <div className="header_title d-flex">
-                      <Link href={"/service-v6-dark"}>SERVICE</Link>
-                      {/* <div className="accordian-btn">
+                      <Link href={"/service-v5-dark"}>SERVICE</Link>
+                      <div className="accordian-btn">
                         {accordion === 3 ? (
                           <a onClick={() => openData(0)}>-</a>
                         ) : (
                           <a onClick={() => openData(3)}>+</a>
                         )}
-                      </div> */}
+                      </div>
                     </div>
                     <ul
                       className="sub_title"
@@ -215,47 +215,16 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                       }
                     >
                       <li>
-                        <Link href={"/service"}>service</Link>
+                        <Link href={"/service-dark"}>Digital Marketing</Link>
                       </li>
                       <li>
-                        <Link href={"/service-dark"}>service dark</Link>
+                        <Link href={"/service-v3-dark"}>
+                          Software Development
+                        </Link>
                       </li>
                       <li>
-                        <Link href={"/service-v2"}>service v2</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v2-dark"}>service v2 dark</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v3"}>service v3</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v3-dark"}>service v3 dark</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v4"}>service v4</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v4-dark"}>service v4 dark</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v5"}>service v5</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v5-dark"}>service v5 dark</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v6"}>service v6</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-v6-dark"}>service v6 dark</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-details"}>service details</Link>
-                      </li>
-                      <li>
-                        <Link href={"/service-details-dark"}>
-                          service details dark
+                        <Link href={"/service-v6-dark"}>
+                          Artificial Intelligence
                         </Link>
                       </li>
                     </ul>
