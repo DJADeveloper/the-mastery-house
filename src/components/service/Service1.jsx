@@ -330,8 +330,8 @@ const Service1 = () => {
                           Rise above the digital noise. Our SEO experts optimize
                           your online presence, improving visibility on search
                           engines. Through keyword research, content
-                          optimization, and technical audits, we ensure you're
-                          found by those seeking your services.
+                          optimization, and technical audits, we ensure
+                          you&apos;re found by those seeking your services.
                         </p>
                         <div className="btn_wrapper">
                           <Link

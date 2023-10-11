@@ -37,9 +37,9 @@ const ServiceV6Hero = () => {
                 <h2 className="about">Service</h2>
                 <p>
                   At Mastery House, we harness the power of AI to redefine
-                  boundaries and expand horizons. We're dedicated to empowering
-                  businesses with cutting-edge AI solutions, tailored to drive
-                  growth and development.
+                  boundaries and expand horizons. We&apos;re dedicated to
+                  empowering businesses with cutting-edge AI solutions, tailored
+                  to drive growth and development.
                 </p>
               </div>
             </div>
