@@ -139,7 +139,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                     <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
                       <div className="brand-title-wrap">
                         <h3 className="brand-title">
-                          Let's Connect. Follow Us
+                          Let&apos;s Connect. Follow Us
                         </h3>
                       </div>
                     </div>
