@@ -78,34 +78,37 @@ const DigitalAgencyHero = () => {
 
   return (
     <>
-      <section className="hero__area ">
+      {/* <section className="hero__area ">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12">
               <div className="hero__content animation__hero_one">
-                {/* <Link href="/service">
+                <Link href="/service">
                   Strategy, Design, Solution Development{" "}
                   <span>
                     <i className="fa-solid fa-arrow-right"></i>
                   </span>
-                </Link> */}
+                </Link>
                 <h2 className="hero__title" ref={heroTitle}>
-                  The Mastery
-                  {!isMobile && <br />}
-                  House
+                  The Mastery <br /> House
                 </h2>
-                {/* <div className="hero__title" ref={heroTitle}>
-                  <video autoPlay muted loop height={600} width={800}>
-                    <source src="assets/video/Logo.mp4" type="video/mp4" />
-                  </video>
-                </div> */}
+
                 <div className="hero__title-wrapper">
                   <p className="hero__sub-title" ref={heroSubTitle}>
                     Merging technology and creativity, we embody{" "}
                     <span>creative problem-solving</span> to craft unique
                     experiences.
                   </p>
-                </div>{" "}
+                </div>
+                <div
+                  className="hero__title-wrapper "
+                  style={{ marginInlineStart: "40%", marginTop: "-90px" }}
+                >
+                  <video autoPlay muted loop height={"70%"} width={"70%"}>
+                    <source src="assets/video/Tmh_video.mp4" type="video/mp4" />
+                  </video>
+                </div>
+
                 <Image
                   priority
                   width={170}
@@ -113,18 +116,10 @@ const DigitalAgencyHero = () => {
                   src={ArrowDownBig}
                   alt="Arrow Down Icon"
                 />
-                <div className="experience">
-                  <h2 className="title">25k+</h2>
-                  <p>
-                    Projects completed <br />
-                    successfully
-                  </p>
-                </div>
               </div>
             </div>
           </div>
         </div>
-
         <Image
           priority
           style={{ width: "auto", height: "auto" }}
@@ -132,6 +127,11 @@ const DigitalAgencyHero = () => {
           alt="image"
           className="hero1_bg"
         />
+      </section> */}
+      <section className="hero__area">
+        <video autoPlay muted loop height={"60%"} width={"100%"}>
+          <source src="assets/video/Tmh_video.mp4" type="video/mp4" />
+        </video>
       </section>
     </>
   );

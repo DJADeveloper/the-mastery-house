@@ -19,7 +19,9 @@ const PersonalPortfolioDark = () => {
           Project
         </div>
         <RootLayout header="header5" footer="none" defaultMode="dark">
-          <PortfolioPage />
+          <div>
+            <PortfolioPage />
+          </div>
         </RootLayout>
       </main>
     </>

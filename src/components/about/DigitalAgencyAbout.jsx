@@ -42,13 +42,15 @@ const DigitalAgencyAbout = () => {
               <div className="about__content-wrapper">
                 <div className="about__img">
                   <div className="img-anim about__img_left">
-                    <Image
-                      priority
-                      style={{ width: "auto", height: "auto" }}
-                      src={About11}
-                      alt="A team of creative professionals brainstorming"
-                      data-speed="0.3"
-                    />
+                    {
+                      <Image
+                        priority
+                        style={{ width: "auto", height: "auto" }}
+                        src={About11}
+                        alt="A team of creative professionals brainstorming"
+                        data-speed="0.3"
+                      />
+                    }
                   </div>
 
                   <div className="about__img-right">

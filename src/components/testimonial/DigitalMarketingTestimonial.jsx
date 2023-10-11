@@ -5,12 +5,12 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import { Navigation, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Testimonial31 from "../../../public/assets/imgs/testimonial/3/1.jpg";
-import Testimonial32 from "../../../public/assets/imgs/testimonial/3/2.jpg";
-import Testimonial33 from "../../../public/assets/imgs/testimonial/3/3.jpg";
+import Testimonial31 from "../../../public/assets/imgs/feature/4/1.png";
+import Testimonial32 from "../../../public/assets/imgs/feature/4/2.png";
+import Testimonial33 from "../../../public/assets/imgs/icon/4.png";
 import Testimonial34 from "../../../public/assets/imgs/testimonial/3/4.jpg";
-import Testimonial35 from "../../../public/assets/imgs/testimonial/3/5.jpg";
-import Testimonial36 from "../../../public/assets/imgs/testimonial/3/6.jpg";
+import Testimonial35 from "../../../public/assets/imgs/logo/large-white-no-tmh-logo.png";
+import Testimonial36 from "../../../public/assets/imgs/logo/large-white-no-tmh-logo.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -116,65 +116,73 @@ const DigitalMarketingTestimonial = () => {
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
+                          Mastery House is the epitome of professionalism and
+                          innovation. They have reshaped our digital presence
+                          with a keen understanding of our vision and the market
+                          dynamics. They not just deliver services but build
+                          relationships grounded in trust and mutual growth.
+                          Exceptional service every step of the way.
                         </p>
-                        <h2 className="client__name-3">Maria D. Halk</h2>
-                        <h3 className="client__role-3">Managing Director</h3>
+                        <h2 className="client__name-3">Shereve </h2>
+                        <h3 className="client__role-3">Northwood Manor</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
+                          Our journey with Mastery House has been nothing short
+                          of spectacular. Their detail-oriented approach and
+                          relentless pursuit of perfection have provided us with
+                          solutions that are not only visually stunning but
+                          highly functional, setting a new benchmark in digital
+                          excellence. I cannot recommend them enough.
                         </p>
-                        <h2 className="client__name-3">Maria D. Halk</h2>
-                        <h3 className="client__role-3">Managing Director</h3>
+                        <h2 className="client__name-3">Cameron </h2>
+                        <h3 className="client__role-3">Touch Of Excellence</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
+                          The Mastery House has truly transformed our event
+                          planning business. When we wanted to elevate our
+                          brand&apos;s digital presence, their team took the
+                          time to understand our ethos, our clientele, and the
+                          intricacies of the events we design. The result? An
+                          incredibly sophisticated and user-friendly website
+                          that not only showcases our work in the best light but
+                          also makes client interactions seamless.
                         </p>
-                        <h2 className="client__name-3">Maria D. Halk</h2>
-                        <h3 className="client__role-3">Managing Director</h3>
+                        <h2 className="client__name-3">Dylan</h2>
+                        <h3 className="client__role-3">Kind Of Big Dyl</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
+                          Mastery House has been a cornerstone in our
+                          brand&apos;s development. Their team is filled with
+                          master craftsmen who poured creativity and expertise
+                          into our projects, crafting a digital space that
+                          speaks our brand language fluently. It&apos;s more
+                          than a service, it&apos;s a partnership for success.
                         </p>
-                        <h2 className="client__name-3">Maria D. Halk</h2>
-                        <h3 className="client__role-3">Managing Director</h3>
+                        <h2 className="client__name-3">Mario</h2>
+                        <h3 className="client__role-3">
+                          Founder - A+ Roofing Excellence
+                        </h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
+                          If you&apos;re looking to elevate your brand and truly
+                          connect with your audience in meaningful ways, I
+                          can&apos;t recommend The Mastery House enough.
+                          They&apos;re not just experts in their field;
+                          they&apos;re visionaries.
                         </p>
-                        <h2 className="client__name-3">Maria D. Halk</h2>
+                        <h2 className="client__name-3">Maria</h2>
                         <h3 className="client__role-3">Managing Director</h3>
                       </div>
                     </SwiperSlide>
@@ -197,30 +205,30 @@ const DigitalMarketingTestimonial = () => {
           </div>
         </div>
         <div className="testimonial__images-3 animation_image_zoom">
-          <Image
+          {/* <Image
             priority
-            width={170}
-            height={200}
-            src={Testimonial31}
+            width={245}
+            height={278}
+            src={Testimonial35}
             alt="testimonial Image"
             className="testimonial3__img"
-          />
-          <Image
+          /> */}
+          {/* <Image
             priority
             width={90}
             height={100}
             src={Testimonial32}
             alt="testimonial Image"
             className="testimonial3__img-2"
-          />
-          <Image
+          /> */}
+          {/* <Image
             priority
             width={110}
             height={130}
             src={Testimonial33}
             alt="testimonial Image"
             className="testimonial3__img-3"
-          />
+          /> */}
           <Image
             priority
             width={330}
@@ -228,22 +236,6 @@ const DigitalMarketingTestimonial = () => {
             src={Testimonial34}
             alt="testimonial Image"
             className="testimonial3__img-4"
-          />
-          <Image
-            priority
-            width={245}
-            height={278}
-            src={Testimonial35}
-            alt="testimonial Image"
-            className="testimonial3__img-5"
-          />
-          <Image
-            priority
-            width={140}
-            height={160}
-            src={Testimonial36}
-            alt="testimonial Image"
-            className="testimonial3__img-6"
           />
         </div>
       </section>

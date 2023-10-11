@@ -15,8 +15,8 @@ const ServiceV3Dark = () => {
       <main>
         <RootLayout header="header3" footer="footer3" defaultMode="dark">
           <ServiceElementV3 />
-          <ServiceBrand />
-          <DigitalAgencyCTA />
+          {/* <ServiceBrand />
+          <DigitalAgencyCTA /> */}
         </RootLayout>
       </main>
     </>

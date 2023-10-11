@@ -50,7 +50,7 @@ export default function Footer2() {
               <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div className="footer__location-2">
                   <div className="location">
-                    <h3>Flordia</h3>
+                    <h3>Florida</h3>
                     <p>Tampa, USA</p>
                   </div>
                   <div className="location">

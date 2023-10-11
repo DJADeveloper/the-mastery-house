@@ -13,9 +13,9 @@ const ServiceV5Dark = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <RootLayout header="header3" footer="footer3" defaultMode="dark">
+        <RootLayout header="header3" footer="foot" defaultMode="dark">
           <ServiceElementV5 />
-          <ServiceBrand />
+          {/* <ServiceBrand /> */}
           <DigitalAgencyCTA />
         </RootLayout>
       </main>

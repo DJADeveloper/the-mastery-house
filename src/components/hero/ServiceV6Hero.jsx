@@ -15,32 +15,31 @@ const ServiceV6Hero = () => {
             <div className="col-xxl-12">
               <div className="hero__title-wrap-7">
                 <h1 className="hero__title-7">
-                  Mastery House — Your{" "}
+                  Mastery House — Your AI{" "}
                   <Image
                     priority
-                    width={135}
+                    width={100}
                     style={{ height: "auto" }}
-                    src={Shape1} // Consider using shapes that are more specific to Mastery House's branding
-                    alt="shape"
+                    src={Shape1}
+                    alt="AI Icon"
                   />{" "}
-                  Success Is Our Code{" "}
+                  Specialist
                   <Image
                     priority
-                    width={300}
+                    width={200}
                     style={{ height: "auto" }}
-                    src={Shape8} // Consider using shapes that are more specific to Mastery House's branding
-                    alt="shape"
+                    src={Shape8}
+                    alt="Mastery House Logo"
                   />
                 </h1>
               </div>
               <div className="hero__text-7">
                 <h2 className="about">Service</h2>
                 <p>
-                  At Mastery House, we redefine boundaries and expand horizons.
-                  We believe in empowering individuals and businesses by
-                  providing services grounded in universal human values,
-                  unlocking unprecedented possibilities for growth and
-                  development.
+                  At Mastery House, we harness the power of AI to redefine
+                  boundaries and expand horizons. We're dedicated to empowering
+                  businesses with cutting-edge AI solutions, tailored to drive
+                  growth and development.
                 </p>
               </div>
             </div>
@@ -51,8 +50,8 @@ const ServiceV6Hero = () => {
           priority
           width={320}
           style={{ height: "auto" }}
-          src={Shape3} // Consider using shapes that are more specific to Mastery House's branding
-          alt="shape"
+          src={Shape3}
+          alt="Neural Network"
           className="shape-1"
         />
       </section>

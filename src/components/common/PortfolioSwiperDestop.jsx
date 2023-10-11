@@ -9,16 +9,16 @@ import {
 } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Portfolio1 from "../../../public/assets/imgs/portfolio/1.png";
+import Portfolio1 from "../../../public/assets/imgs/portfolio/1/laptop-portfolio.png";
 import Shape16 from "../../../public/assets/imgs/shape/16.png";
-import Brand1 from "../../../public/assets/imgs/brand/1.png";
-import Brand2 from "../../../public/assets/imgs/brand/2.png";
-import Brand3 from "../../../public/assets/imgs/brand/3.png";
-import Brand4 from "../../../public/assets/imgs/brand/4.png";
-import Portfolio11 from "../../../public/assets/imgs/portfolio/1/1.jpg";
-import Portfolio12 from "../../../public/assets/imgs/portfolio/1/2.jpg";
-import Portfolio13 from "../../../public/assets/imgs/portfolio/1/3.jpg";
-import Portfolio14 from "../../../public/assets/imgs/portfolio/1/4.jpg";
+import Social1 from "../../../public/assets/imgs/socials/fb.svg";
+import Social2 from "../../../public/assets/imgs/socials/ig.svg";
+import Social3 from "../../../public/assets/imgs/socials/in.svg";
+import Social4 from "../../../public/assets/imgs/socials/x.svg";
+import Portfolio11 from "../../../public/assets/imgs/portfolio/1/work-05.jpg";
+import Portfolio12 from "../../../public/assets/imgs/portfolio/1/work-06.png";
+import Portfolio13 from "../../../public/assets/imgs/portfolio/1/work-01.jpg";
+import Portfolio14 from "../../../public/assets/imgs/portfolio/1/work-04.jpg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -30,6 +30,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/free-mode";
+import DigitalAgencyHero from "../hero/DigitalAgencyHero";
+
+import Contact1 from "../contact/Contact1";
 
 const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -44,17 +47,17 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
     let rootParent = menuAnim.current.children;
     for (let i = 0; i < rootParent.length; i++) {
       let firstParent = rootParent[i].children;
-      let arr = firstParent[0].textContent.split("")
-      let spanData = ''
+      let arr = firstParent[0].textContent.split("");
+      let spanData = "";
       for (let j = 0; j < arr.length; j++) {
-        if(arr[j] == ' ') {
+        if (arr[j] == " ") {
           spanData += `<span style='width:6px;'>${arr[j]}</span>`;
         } else {
           spanData += `<span>${arr[j]}</span>`;
         }
       }
-      let result = '<div class="menu-text">' + spanData + '</div>';
-      firstParent[0].innerHTML = result
+      let result = '<div class="menu-text">' + spanData + "</div>";
+      firstParent[0].innerHTML = result;
     }
   };
 
@@ -74,38 +77,12 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
           }}
         >
           <SwiperSlide>
-            <section
-              className="portfolio__hero-area portfolio-section"
-              ref={portfolioSection}
-            >
-              <div className="container">
-                <div className="row">
-                  <div className="col-xxl-12">
-                    <div className="portfolio__hero">
-                      <h1 className="title shape-circle">Full stack</h1>
-                      <h2 className="title text-stroke">Web & Mobile</h2>
-                      <h2 className="title">developer</h2>
-                      <div className="btn-wrapper">
-                        <Link href="/portfolio" className="wc-btn-dark">
-                          View all work
-                        </Link>
-                      </div>
-                      <Image
-                        priority
-                        width={921}
-                        style={{ height: "auto" }}
-                        src={Portfolio1}
-                        alt="Personal Portfolio"
-                        className="pp-thumb"
-                        ref={portfolioHeroImg}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <section className=" portfolio-section">
+              <DigitalAgencyHero />
+              {/* <DigitalAgencyRoll /> */}
             </section>
           </SwiperSlide>
-
+          {/* About */}
           <SwiperSlide>
             <section className="portfolio-section portfolio__about pt-140 pb-150">
               <div className="container">
@@ -113,8 +90,8 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                   <div className="col-xxl-8 col-xxl-8 col-lg-8">
                     <div className="portfolio__about-left">
                       <h2 className="sec-title">
-                        I craft wonderful <span>digital experiences</span> for
-                        brands
+                        The Mastery House<span> Where Creativity</span> Meets
+                        Innovation
                       </h2>
                       <Image
                         priority
@@ -128,17 +105,31 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                   <div className="col-xxl-4 col-xl-4 col-lg-4">
                     <div className="sec-text">
                       <p>
-                        Based in Washington, DC, I work with experts from the
-                        Center for Strategic and International Studies (CSIS) to
-                        help them communicate their research more effectively on
-                        the web. Together we make websites, data visualizations,
-                        and long-forms that strengthen their networks and engage
-                        new audiences with thoughtful content and design
-                        strategies.
+                        From the bustling digital hubs to the quiet corners of
+                        innovation, The Mastery House stands tall as a beacon of
+                        transformative creativity. More than just a digital
+                        agency, we are curators of the future, intricately
+                        blending strategy, design, and groundbreaking technology
+                        into unparalleled digital masterpieces. Serving
+                        globally-renowned brands and ambitious startups alike,
+                        we sculpt digital experiences that resonate, inspire,
+                        and consistently deliver unmatched results
                       </p>
-                      <Link href="/about" className="wc-btn-dark">
-                        Explore Me
+                      <Link
+                        href="/about-dark"
+                        className="wc-btn-dark btn-hover "
+                      >
+                        Let`s Talk
                       </Link>
+                      {/* <div className="btn_wrapper">
+                        <Link
+                          href="/contact-dark"
+                          className="wc-btn-primary btn-hover btn-item"
+                        >
+                          <span></span>Let’s Talk!
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -148,7 +139,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                     <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
                       <div className="brand-title-wrap">
                         <h3 className="brand-title">
-                          worked with global largest brands
+                          Let's Connect. Follow Us
                         </h3>
                       </div>
                     </div>
@@ -159,7 +150,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             priority
                             width={97}
                             height={67}
-                            src={Brand1}
+                            src={Social1}
                             alt="Brand Logo"
                           />
                         </div>
@@ -168,7 +159,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             priority
                             width={85}
                             height={67}
-                            src={Brand2}
+                            src={Social2}
                             alt="Brand Logo"
                           />
                         </div>
@@ -177,7 +168,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             priority
                             width={114}
                             height={64}
-                            src={Brand3}
+                            src={Social3}
                             alt="Brand Logo"
                           />
                         </div>
@@ -186,7 +177,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             priority
                             width={82}
                             height={70}
-                            src={Brand4}
+                            src={Social4}
                             alt="Brand Logo"
                           />
                         </div>
@@ -197,8 +188,88 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
               </div>
             </section>
           </SwiperSlide>
-
+          {/* Services */}
           <SwiperSlide>
+            <section className="portfolio-section portfolio__service pt-110 pb-110">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
+                    <h2 className="sec-title">Services Tailored For You.</h2>
+                  </div>
+                  <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
+                    <div className="sec-text">
+                      <p>
+                        At The Mastery House, we blend innovation with
+                        expertise. From dynamic Digital Marketing campaigns to
+                        state-of-the-art Software Development and cutting-edge
+                        AI solutions, we craft experiences that redefine
+                        boundaries. Explore our offerings tailored for
+                        transformative results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="portfolio__service-list">
+                  <div className="row">
+                    <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                      <div className="portfolio__service-item">
+                        <Link href="/service-dark">
+                          <h3 className="ps-title">
+                            Digital <br /> Marketing
+                          </h3>
+                          <ul>
+                            <li>+ Content Strategy</li>
+                            <li>+ Social Media Campaigns</li>
+                            <li>+ SEO & SEM</li>
+                          </ul>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                      <div className="portfolio__service-item">
+                        <Link href="/service-v3-dark">
+                          <h3 className="ps-title">
+                            Software
+                            <br /> Developemnt
+                          </h3>
+                          <ul>
+                            <li>+ React</li>
+                            <li>+ Python</li>
+                            <li>+ Web3</li>
+                          </ul>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                      <div className="portfolio__service-item">
+                        <Link href="/service-v6-dark">
+                          <h3 className="ps-title">
+                            Artificial
+                            <br /> Intelligence
+                          </h3>
+                          <ul>
+                            <li>+ Machine Learning</li>
+                            <li>+ Chatbots </li>
+                            <li>+ Predictive Analysis</li>
+                          </ul>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-xxl-12">
+                    <div className="ps-btn">
+                      <Link href="/contact-dark">
+                        See How We {""}
+                        <strong>Do It</strong>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <section className="portfolio-section portfolio__project">
               <div className="container">
                 <div className="row">
@@ -349,240 +420,68 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
               </div>
             </section>
           </SwiperSlide>
-
+          {/* Portfolio */}
           <SwiperSlide>
-            <section className="portfolio-section portfolio__service pt-140 pb-140">
-              <div className="container">
-                <div className="row">
-                  <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
-                    <h2 className="sec-title"> I MAKE THE Service BETTER.</h2>
-                  </div>
-                  <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
-                    <div className="sec-text">
-                      <p>
-                        Static and dynamic secure code review can prevent a 0day
-                        before your product is even released. We can integrate
-                        with your dev environment
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="portfolio__service-list">
-                  <div className="row">
-                    <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                      <div className="portfolio__service-item">
-                        <Link href="/service-details">
-                          <h3 className="ps-title">
-                            Frontend <br /> Developemnt
-                          </h3>
-                          <ul>
-                            <li>+ WordPress</li>
-                            <li>+ Python</li>
-                            <li>+ PHP & Laravel</li>
-                          </ul>
+            <section className=" portfolio-section " ref={portfolioSection}>
+              <div className="container ">
+                <div className="row pt-140 ">
+                  <div className="col-xxl-12 d-flex">
+                    <div className="portfolio__hero ">
+                      <div>
+                        <h1 className="title shape-circle">What</h1>
+                        <h2 className="title text-stroke">We </h2>
+                        <h2 className="title">Do</h2>
+                      </div>
+                      <div>
+                        <Image
+                          priority
+                          width={800}
+                          style={{
+                            height: "auto",
+                            marginLeft: "80%",
+                            marginBottom: "20%",
+                          }}
+                          src={Portfolio1}
+                          alt="Personal Portfolio"
+                          className="pp-thumb"
+                          ref={portfolioHeroImg}
+                        />
+                      </div>
+                      <div className="btn-wrapper">
+                        <Link href="/portfolio-dark" className="wc-btn-dark">
+                          View all work
                         </Link>
                       </div>
-                    </div>
-                    <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                      <div className="portfolio__service-item">
-                        <Link href="/service-details">
-                          <h3 className="ps-title">
-                            Backend
-                            <br /> Developemnt
-                          </h3>
-                          <ul>
-                            <li>+ WordPress</li>
-                            <li>+ Python</li>
-                            <li>+ PHP & Laravel</li>
-                          </ul>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                      <div className="portfolio__service-item">
-                        <Link href="/service-details">
-                          <h3 className="ps-title">
-                            Android
-                            <br /> Developemnt
-                          </h3>
-                          <ul>
-                            <li>+ WordPress</li>
-                            <li>+ Python</li>
-                            <li>+ PHP & Laravel</li>
-                          </ul>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-xxl-12">
-                    <div className="ps-btn">
-                      <Link href="/contact">
-                        Call me to get more extra service{" "}
-                        <strong>call now</strong>
-                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-          </SwiperSlide>
-
+          </SwiperSlide>{" "}
+          {/* Testimonial */}
+          {/* <SwiperSlide>
+            <section className="portfolio-section  ">
+              <DigitalMarketingTestimonial />
+            </section>
+          </SwiperSlide> */}
+          {/* Blog */}
+          {/* <SwiperSlide>
+            <section className="portfolio-section ">
+              <StartupAgencyBlog />
+            </section>
+          </SwiperSlide> */}
+          {/* Contact */}
           <SwiperSlide>
-            <section className="portfolio-section portfolio__footer-area  pt-130">
-              {/* Contact area start  */}
-              <div className="">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                      <div className="sec-title-wrapper">
-                        <h2 className="pf-title">Let’s get in touch 🤟</h2>
-                      </div>
-                    </div>
-                    <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                      <div className="contact__text">
-                        <p>
-                          {
-                            "Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."
-                          }
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                      <div className="pf-contact">
-                        <h3>
-                          {"Don't be afraid man !"} <br />
-                          say hello
-                        </h3>
-                        <ul>
-                          <li>
-                            <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
-                          </li>
-                          <li>
-                            <a href="mailto:hello@example.com">
-                              hello@example.com
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="pf-social">
-                        <h3>follow </h3>
-                        <ul>
-                          <li>
-                            <a href="#">Behance</a>
-                          </li>
-                          <li>
-                            <a href="#">Dribble</a>
-                          </li>
-                          <li>
-                            <a href="#">Meduim</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-                      <div className="contact__form">
-                        <form action="#">
-                          <div className="row g-3">
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="text"
-                                name="name"
-                                placeholder="Name *"
-                              />
-                            </div>
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="email"
-                                name="email"
-                                placeholder="Email *"
-                              />
-                            </div>
-                          </div>
-                          <div className="row g-3">
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="tel"
-                                name="phone"
-                                placeholder="Phone"
-                              />
-                            </div>
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="text"
-                                name="subject"
-                                placeholder="Subject *"
-                              />
-                            </div>
-                          </div>
-                          <div className="row g-3">
-                            <div className="col-12">
-                              <textarea
-                                name="message"
-                                placeholder="Messages *"
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div className="row g-3">
-                            <div className="col-12">
-                              <div className="pc-btn">
-                                <button className="wc-btn-dark">
-                                  Send Me Quotes
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Contact area end  */}
-
-              {/* Footer area start  */}
-              <footer className="portfolio__footer">
-                <div className="container">
-                  <div className="pf-btm">
-                    <div className="row">
-                      <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
-                        <div className="footer__copyright-2">
-                          <p>
-                            © 2022 - 2025 | Alrights reserved by{" "}
-                            <a href="https://wealcoder.com/" target="_blank">
-                              Wealcoder
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
-                        <div className="footer__nav">
-                          <ul className="footer-menu menu-anim" ref={menuAnim}>
-                            <li>
-                              <Link href="/about">about us</Link>
-                            </li>
-                            <li>
-                              <Link href="/contact">contact</Link>
-                            </li>
-                            <li>
-                              <Link href="/career">Career</Link>
-                            </li>
-                            <li>
-                              <Link href="/faq">FAQs</Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </footer>
-              {/* Footer area end */}
+            <section className="portfolio-section  ">
+              <Contact1 />
             </section>
           </SwiperSlide>
+          {/* Team */}
+          {/* <SwiperSlide>
+            <section className="portfolio-section p-5 ">
+              <Team />
+            </section>
+          </SwiperSlide> */}
           <div className="swiper-pagination circle-pagination-2"></div>
         </Swiper>
       </div>

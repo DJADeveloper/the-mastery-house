@@ -17,6 +17,8 @@ import CreativeAgencyAbout from "@/components/about/CreativeAgencyAbout";
 import DesignStudioAbout from "@/components/about/DesignStudioAbout";
 import ModernAgencyAbout from "@/components/about/ModernAgencyAbout";
 import DigitalMarketingAbout from "@/components/about/DigitalMarketingAbout";
+import PersonalPortfolioDark from "./personal-portfolio-dark";
+import Header5 from "@/components/header/Header5";
 
 const DigitalAgency = () => {
   const modalTestimonial1 = useRef();
@@ -78,8 +80,9 @@ const DigitalAgency = () => {
       console.log(err);
     }
   }
+
   return (
-    <div>
+    <main>
       <Head>
         <title>Digital Agency</title>
         <meta name="description" content="Digital Agency Description" />
@@ -89,13 +92,17 @@ const DigitalAgency = () => {
         <div className="cursor" id="client_cursor">
           Play
         </div>
-        <RootLayout header="header5" footer="footer3" defaultMode="dark">
-          <DigitalAgencyHero />
-          <DigitalAgencyRoll />
-          <DigitalAgencyAbout />
-          <DigitalAgencyService />
-          <DigitalAgencyCounter />
-          <DigitalAgencyWorkflow />
+        <RootLayout header="header5" footer="none" defaultMode="dark">
+          <PersonalPortfolioDark />
+          {/* <div style={snapSectionStyle}>
+            <DigitalAgencyHero />
+            <DigitalAgencyRoll />
+          </div> */}
+          {/* <DigitalAgencyAbout /> */}
+          {/* <DigitalAgencyService /> */}
+
+          {/* <DigitalAgencyCounter />
+          <DigitalAgencyWorkflow /> */}
           {/* <DigitalAgencyPortfolio /> */}
           {/* <DigitalAgencyBrand /> */}
           {/* <DigitalAgencyTestimonial
@@ -106,8 +113,8 @@ const DigitalAgency = () => {
             modalClose2={modalClose2}
             modalClose3={modalClose3}
           /> */}
-          <DigitalAgencyBlog />
-          <DigitalAgencyCTA />
+          {/* <DigitalAgencyBlog />
+          <DigitalAgencyCTA /> */}
         </RootLayout>
       </main>
 
@@ -163,7 +170,7 @@ const DigitalAgency = () => {
           ></iframe>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

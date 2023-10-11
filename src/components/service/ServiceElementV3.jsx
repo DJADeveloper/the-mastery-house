@@ -1,9 +1,12 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
-import Service21 from "../../../public/assets/imgs/service/2/1.png";
-import Service22 from "../../../public/assets/imgs/service/2/2.png";
-import Service23 from "../../../public/assets/imgs/service/2/3.png";
+import Service21 from "../../../public/assets/imgs/service/2/wordpress.svg";
+import Service22 from "../../../public/assets/imgs/service/2/react.svg";
+import Service23 from "../../../public/assets/imgs/service/2/python.svg";
+import Service24 from "../../../public/assets/imgs/service/2/blockchain.svg";
+import Service25 from "../../../public/assets/imgs/service/2/ecommerce.svg";
+import Service26 from "../../../public/assets/imgs/service/2/saas.svg";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -68,16 +71,18 @@ const ServiceElementV3 = () => {
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="sec-text text-anim">
                 <p>
-                  We are passionate to create connected brands and services, and
-                  campaigns to enable stable and successful relationships
-                  between businesses and customers.
+                  We harness the latest technologies to build scalable and
+                  efficient software solutions. From web applications to
+                  blockchain development, our expertise ensures your digital
+                  success.
                 </p>
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title title-anim">
-                  We grow your brands through bold service we’re providing
+                  Elevating your digital presence through our cutting-edge
+                  development services.
                 </h2>
               </div>
             </div>
@@ -86,6 +91,7 @@ const ServiceElementV3 = () => {
           <div className="row pt-140">
             <div className="col-xxl-12">
               <div className="service__list-2 animation__service-2">
+                {/* Web & Mobile App Development */}
                 <div className="service__item-2">
                   <div>
                     <Image
@@ -93,23 +99,25 @@ const ServiceElementV3 = () => {
                       width={102}
                       height={114}
                       src={Service21}
-                      alt="Service Icon"
+                      alt="Service Icon - Web & Mobile App Development"
                     />
                     <h3 className="service__title-2">
-                      Branding <br />
-                      Design
+                      Web & Mobile App <br />
+                      Development
                     </h3>
                     <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
+                      Crafting responsive and intuitive web and mobile
+                      applications tailored to client needs.
                     </p>
                     <ul>
-                      <li>+ Logo Design</li>
-                      <li>+ Advertisement</li>
-                      <li>+ Promotion</li>
+                      <li>+ Responsive Web Development</li>
+                      <li>+ Native & Hybrid Mobile Apps</li>
+                      <li>+ PWA Development</li>
                     </ul>
                   </div>
                 </div>
+
+                {/* Frontend Technologies */}
                 <div className="service__item-2">
                   <div>
                     <Image
@@ -117,23 +125,25 @@ const ServiceElementV3 = () => {
                       width={107}
                       height={114}
                       src={Service22}
-                      alt="Service Icon"
+                      alt="Service Icon - Frontend Technologies"
                     />
                     <h3 className="service__title-2 ">
-                      Digital Product <br />
-                      Design
+                      Frontend <br />
+                      Technologies
                     </h3>
                     <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
+                      Utilizing the latest frameworks and libraries to build
+                      visually appealing and performant user interfaces.
                     </p>
                     <ul>
-                      <li>+ Logo Design</li>
-                      <li>+ Advertisement</li>
-                      <li>+ Promotion</li>
+                      <li>+ React & Vue.js</li>
+                      <li>+ Angular</li>
+                      <li>+ Web Components</li>
                     </ul>
                   </div>
                 </div>
+
+                {/* Backend & API Development */}
                 <div className="service__item-2">
                   <div>
                     <Image
@@ -141,98 +151,104 @@ const ServiceElementV3 = () => {
                       width={112}
                       height={114}
                       src={Service23}
-                      alt="Service Icon"
+                      alt="Service Icon - Backend & API Development"
                     />
                     <h3 className="service__title-2">
-                      Architectural <br />
-                      Design
+                      Backend & API <br />
+                      Development
                     </h3>
                     <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
+                      Building robust backend systems and APIs to power web and
+                      mobile applications.
                     </p>
                     <ul>
-                      <li>+ Logo Design</li>
-                      <li>+ Advertisement</li>
-                      <li>+ Promotion</li>
+                      <li>+ Node.js & Express.js</li>
+                      <li>+ REST & GraphQL APIs</li>
+                      <li>+ Database Integration</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="row pt-140">
             <div className="col-xxl-12">
               <div className="service__list-2 animation__service-2">
+                {/* Blockchain Development */}
                 <div className="service__item-2">
                   <div>
                     <Image
                       priority
                       width={102}
                       height={114}
-                      src={Service21}
-                      alt="Service Icon"
+                      src={Service24}
+                      alt="Service Icon - Blockchain Development"
                     />
                     <h3 className="service__title-2">
-                      Branding <br />
-                      Design
+                      Blockchain <br />
+                      Development
                     </h3>
                     <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
+                      Harnessing the power of blockchain technology for
+                      decentralized applications, smart contracts, and more.
                     </p>
                     <ul>
-                      <li>+ Logo Design</li>
-                      <li>+ Advertisement</li>
-                      <li>+ Promotion</li>
+                      <li>+ Smart Contract Development</li>
+                      <li>+ DApp Development</li>
+                      <li>+ Cryptocurrency Integration</li>
                     </ul>
                   </div>
                 </div>
+
+                {/* Custom E-commerce Solutions */}
                 <div className="service__item-2">
                   <div>
                     <Image
                       priority
                       width={107}
                       height={114}
-                      src={Service22}
-                      alt="Service Icon"
+                      src={Service25}
+                      alt="Service Icon - Custom E-commerce Solutions"
                     />
                     <h3 className="service__title-2 ">
-                      Digital Product <br />
-                      Design
+                      Custom E-commerce <br />
+                      Solutions
                     </h3>
                     <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
+                      Creating bespoke e-commerce platforms with seamless user
+                      experience and integrated payment gateways.
                     </p>
                     <ul>
-                      <li>+ Logo Design</li>
-                      <li>+ Advertisement</li>
-                      <li>+ Promotion</li>
+                      <li>+ Shopping Cart Development</li>
+                      <li>+ Payment Gateway Integration</li>
+                      <li>+ Product Management Systems</li>
                     </ul>
                   </div>
                 </div>
+
+                {/* Enterprise Software & SaaS */}
                 <div className="service__item-2">
                   <div>
                     <Image
                       priority
                       width={112}
                       height={114}
-                      src={Service23}
-                      alt="Service Icon"
+                      src={Service26}
+                      alt="Service Icon - Enterprise Software & SaaS"
                     />
                     <h3 className="service__title-2">
-                      Architectural <br />
-                      Design
+                      Enterprise Software & <br />
+                      SaaS
                     </h3>
                     <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
+                      Delivering scalable enterprise solutions and
+                      Software-as-a-Service applications for businesses.
                     </p>
                     <ul>
-                      <li>+ Logo Design</li>
-                      <li>+ Advertisement</li>
-                      <li>+ Promotion</li>
+                      <li>+ Business Intelligence Tools</li>
+                      <li>+ Cloud Integration</li>
+                      <li>+ Subscription Models</li>
                     </ul>
                   </div>
                 </div>

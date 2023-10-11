@@ -42,7 +42,7 @@ const Contact1 = () => {
 
   return (
     <>
-      <section className="contact__area-6">
+      <section className="contact__area-6 pb-3">
         <div className="container g-0 line pt-120 pb-110">
           <span className="line-3"></span>
           <div className="row">

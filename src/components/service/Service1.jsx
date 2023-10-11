@@ -2,11 +2,14 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
-import Service11 from "../../../public/assets/imgs/service/1.jpg";
-import Service12 from "../../../public/assets/imgs/service/2.jpg";
-import Service13 from "../../../public/assets/imgs/service/3.jpg";
-import Service14 from "../../../public/assets/imgs/service/4.jpg";
-import Service15 from "../../../public/assets/imgs/service/5.jpg";
+import Service11 from "../../../public/assets/imgs/service/1.png";
+import Service12 from "../../../public/assets/imgs/service/content-creation2.svg";
+import Service13 from "../../../public/assets/imgs/service/social-media.svg";
+import Service14 from "../../../public/assets/imgs/service/social-ads.svg";
+import Service15 from "../../../public/assets/imgs/service/seo.svg";
+import Service16 from "../../../public/assets/imgs/service/logo-design.svg";
+import Service17 from "../../../public/assets/imgs/service/email.svg";
+import Service18 from "../../../public/assets/imgs/service/email-marketing2.svg";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -97,38 +100,28 @@ const Service1 = () => {
                 <div className="left-content">
                   <ul className="service__list-6">
                     <li>
-                      <a href="#service_1">
-                        Interaction <br />
-                        Design
-                      </a>
+                      <a href="#service_1">Storybranding</a>
                     </li>
                     <li>
-                      <a href="#service_2">
-                        Web & Mobile <br />
-                        Development
-                      </a>
+                      <a href="#service_2">Content Creation</a>
                     </li>
                     <li>
-                      <a href="#service_3">
-                        Motion & Branding <br />
-                        Design
-                      </a>
+                      <a href="#service_3">Social Media Marketing</a>
                     </li>
                     <li>
-                      <a href="#service_4">
-                        Digital <br /> Maketing
-                      </a>
+                      <a href="#service_4">Social Media Advertising</a>
                     </li>
                     <li>
-                      <a href="#service_5">
-                        Concept and <br />
-                        Strategy
-                      </a>
+                      <a href="#service_5">SEO</a>
                     </li>
                     <li>
-                      <a href="#service_6">
-                        Illustrations & <br /> Prototype
-                      </a>
+                      <a href="#service_6">Logo Creation</a>
+                    </li>
+                    <li>
+                      <a href="#service_7">Email Marketing</a>
+                    </li>
+                    <li>
+                      <a href="#service_8">Email Marketing Management</a>
                     </li>
                   </ul>
                 </div>
@@ -178,7 +171,23 @@ const Service1 = () => {
                     <Image
                       priority
                       style={{ width: "auto", height: "auto" }}
-                      src={Service14}
+                      src={Service16}
+                      alt="Service Image"
+                    />
+                  </div>
+                  <div className="service__image">
+                    <Image
+                      priority
+                      style={{ width: "auto", height: "auto" }}
+                      src={Service17}
+                      alt="Service Image"
+                    />
+                  </div>
+                  <div className="service__image">
+                    <Image
+                      priority
+                      style={{ width: "auto", height: "auto" }}
+                      src={Service18}
                       alt="Service Image"
                     />
                   </div>
@@ -192,271 +201,233 @@ const Service1 = () => {
                       data-secid="1"
                     >
                       <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service11}
-                          alt="Service Image"
-                        />
+                        {/* Add your image for Storybranding here */}
                       </div>
-
                       <div className="animation__service_page">
-                        <h2 className="service__title-6">
-                          User paths or user flows functional models
-                        </h2>
+                        <h2 className="service__title-6">Storybranding</h2>
                         <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
+                          Storybranding is a method of crafting your brand's
+                          message to resonate with your audience's desires and
+                          challenges. Through understanding and positioning, we
+                          transform your brand's narrative into a compelling
+                          story that captivates and converts.
                         </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
                         <div className="btn_wrapper">
                           <Link
-                            href="/service-details"
+                            href="/contact-dark"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
                     </div>
 
                     <div
-                      className="service__item-6"
+                      className="service__item-6 has__service_animation"
                       id="service_2"
                       data-secid="2"
                     >
                       <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service12}
-                          alt="Service Image"
-                        />
+                        {/* Add your image for Content Creation here */}
                       </div>
-
                       <div className="animation__service_page">
-                        <h2 className="service__title-6">
-                          Web & Mobile Development
-                        </h2>
+                        <h2 className="service__title-6">Content Creation</h2>
                         <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
+                          Effective content is the backbone of digital presence.
+                          We craft compelling, SEO-friendly content tailored to
+                          your audience, from blog posts and articles to videos,
+                          infographics, and more. Our content not only engages
+                          but also drives action.
                         </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
                         <div className="btn_wrapper">
                           <Link
-                            href="/service-details"
+                            href="/contact-dark"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
                     </div>
 
                     <div
-                      className="service__item-6"
+                      className="service__item-6 has__service_animation"
                       id="service_3"
                       data-secid="3"
                     >
                       <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service13}
-                          alt="Service Image"
-                        />
+                        {/* Add your image for Social Media Marketing here */}
                       </div>
-
                       <div className="animation__service_page">
                         <h2 className="service__title-6">
-                          UMotion & Branding Design
+                          Social Media Marketing
                         </h2>
                         <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
+                          We strategize and manage your brand's presence across
+                          major social platforms, engaging your audience and
+                          expanding your reach. Through curated posts and
+                          targeted engagement strategies, we elevate your
+                          brand's voice in the social sphere.
                         </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
                         <div className="btn_wrapper">
                           <Link
-                            href="/service-details"
+                            href="/contact-dark"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
                     </div>
 
                     <div
-                      className="service__item-6"
+                      className="service__item-6 has__service_animation"
                       id="service_4"
                       data-secid="4"
                     >
                       <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service14}
-                          alt="Service Image"
-                        />
+                        {/* Add your image for Social Media Advertising here */}
                       </div>
-
                       <div className="animation__service_page">
                         <h2 className="service__title-6">
-                          User paths or user flows functional models
+                          Social Media Advertising
                         </h2>
                         <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
+                          Unlock the potential of paid social campaigns. Our
+                          team targets the right audience with optimized ads,
+                          ensuring your brand message reaches those who matter.
+                          From setup to monitoring, we handle all aspects to
+                          maximize ROI.
                         </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
                         <div className="btn_wrapper">
                           <Link
-                            href="/service-details"
+                            href="/contact-dark"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
                     </div>
 
                     <div
-                      className="service__item-6"
+                      className="service__item-6 has__service_animation"
                       id="service_5"
                       data-secid="5"
                     >
                       <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service15}
-                          alt="Service Image"
-                        />
+                        {/* Add your image for SEO here */}
                       </div>
-
                       <div className="animation__service_page">
-                        <h2 className="service__title-6">
-                          User paths or user flows functional models
-                        </h2>
+                        <h2 className="service__title-6">SEO</h2>
                         <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
+                          Rise above the digital noise. Our SEO experts optimize
+                          your online presence, improving visibility on search
+                          engines. Through keyword research, content
+                          optimization, and technical audits, we ensure you're
+                          found by those seeking your services.
                         </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
                         <div className="btn_wrapper">
                           <Link
-                            href="/service-details"
+                            href="/contact-dark"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
                     </div>
 
                     <div
-                      className="service__item-6"
+                      className="service__item-6 has__service_animation"
                       id="service_6"
                       data-secid="6"
                     >
                       <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service14}
-                          alt="Service Image"
-                        />
+                        {/* Add your image for Logo Creation here */}
                       </div>
-
                       <div className="animation__service_page">
-                        <h2 className="service__title-6">
-                          Illustrations & Prototype
-                        </h2>
+                        <h2 className="service__title-6">Logo Creation</h2>
                         <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
+                          Your logo is your brand's first impression. We craft
+                          unique and memorable logos that resonate with your
+                          brand's essence. Through a fusion of creativity and
+                          strategy, we ensure your logo stands out and speaks
+                          volumes.
                         </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
                         <div className="btn_wrapper">
                           <Link
-                            href="/service-details"
+                            href="/contact-dark"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      className="service__item-6 has__service_animation"
+                      id="service_7"
+                      data-secid="7"
+                    >
+                      <div className="image-tab">
+                        {/* Add your image for Email Marketing here */}
+                      </div>
+                      <div className="animation__service_page">
+                        <h2 className="service__title-6">Email Marketing</h2>
+                        <p>
+                          Directly reach your audience's inbox with compelling
+                          campaigns. We design, segment, and send impactful
+                          email campaigns that foster brand loyalty and drive
+                          conversions. Personalized and timely, our approach
+                          maximizes engagement.
+                        </p>
+                        <div className="btn_wrapper">
+                          <Link
+                            href="/contact-dark"
+                            className="wc-btn-secondary btn-item btn-hover"
+                          >
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      className="service__item-6 has__service_animation"
+                      id="service_8"
+                      data-secid="8"
+                    >
+                      <div className="image-tab">
+                        {/* Add your image for Email Marketing Management here */}
+                      </div>
+                      <div className="animation__service_page">
+                        <h2 className="service__title-6">
+                          Email Marketing Management
+                        </h2>
+                        <p>
+                          From list management to tracking performance, we
+                          handle all facets of your email marketing endeavors.
+                          We optimize campaigns based on insights, ensuring
+                          continual improvement and engagement. Stay connected
+                          with your audience effortlessly.
+                        </p>
+                        <div className="btn_wrapper">
+                          <Link
+                            href="/contact-dark"
+                            className="wc-btn-secondary btn-item btn-hover"
+                          >
+                            <span></span>Learn More
+                            <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>

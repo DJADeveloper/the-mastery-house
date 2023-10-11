@@ -20,9 +20,9 @@ const AboutDark = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <RootLayout defaultMode="dark">
+        <RootLayout defaultMode="dark" footer="footer5">
           {/* test */}
-          <ModernAgencyAbout />
+          {/* <ModernAgencyAbout />     */}
           {/* <CreativeAgencyAbout /> */}
           <DesignStudioAbout />
 
@@ -33,7 +33,7 @@ const AboutDark = () => {
           {/* <AboutTeam />
           <DigitalAgencyBrand /> */}
           <AboutTestimonial />
-          <DigitalAgencyCTA />
+          {/* <DigitalAgencyCTA /> */}
         </RootLayout>
       </main>
     </div>

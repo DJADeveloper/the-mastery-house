@@ -1,3 +1,5 @@
+import NewLogo from "../../../public/assets/imgs/logo/newLogo.svg";
+
 const ModernAgencyAbout = () => {
   return (
     <>
@@ -31,13 +33,13 @@ const ModernAgencyAbout = () => {
               playsInline
               style={{
                 position: "absolute",
-                top: 30,
+                top: 0,
                 left: 0,
                 width: "100%",
-                height: "80%",
+                height: "100%",
               }}
             >
-              <source src="assets/video/logo.mp4" type="video/mp4" />
+              <source src="assets/video/tmh_video.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

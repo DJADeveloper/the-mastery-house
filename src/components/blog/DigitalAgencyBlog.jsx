@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
-import Blog1 from "../../../public/assets/imgs/blog/blog1/blog1-cover.png";
+import Blog1 from "../../../public/assets/imgs/blog/blog1/blog11.png";
 import Blog2 from "../../../public/assets/imgs/blog/blog2/blog2-cover.png";
 import Blog3 from "../../../public/assets/imgs/blog/blog3/blog3-cover.png";
 

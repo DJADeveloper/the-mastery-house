@@ -65,102 +65,93 @@ const CreativeAgencyService = () => {
             <div className="col-xxl-12">
               <div className="service__items-7 animation_service_7">
                 <div className="service__item-7">
-                  {/* <Link href="/service-details-dark"> */}
                   <h3 className="service__title-7">
-                    Branding <span>Design</span>
+                    Chatbots <span>& Virtual Assistants</span>
                   </h3>
-                  {/* </Link> */}
                   <p>
-                    We cultivate unique brand identities through awe-inspiring
-                    visual design grounded in thoughtful strategy and deep
-                    philosophy.
+                    Design and deploy AI-driven chatbots for various
+                    applications, handling customer queries, appointments, and
+                    more.
                   </p>
                   <ul>
-                    <li>+ Logo Design</li>
-                    <li>+ Brand Strategy</li>
-                    <li>+ Visual Identity</li>
+                    <li>+ Web Integration</li>
+                    <li>+ Conversational Flows</li>
+                    <li>+ Multi-platform Support</li>
                   </ul>
                 </div>
+
                 <div className="service__item-7">
-                  {/* <Link href="/service-details-dark"> */}
                   <h3 className="service__title-7">
-                    Interactive <span>Design</span>
+                    Predictive <span>Analytics</span>
                   </h3>
-                  {/* </Link> */}
                   <p>
-                    Elevate your user experience with interactive designs that
-                    are both engaging and visually stunning.
+                    Offer insights into future trends, sales forecasting, and
+                    customer behavior prediction.
                   </p>
                   <ul>
-                    <li>+ User Experience (UX) Design</li>
-                    <li>+ User Interface (UI) Design</li>
-                    <li>+ Interaction Design</li>
+                    <li>+ Data Analysis</li>
+                    <li>+ Trend Forecasting</li>
+                    <li>+ Business Intelligence</li>
                   </ul>
                 </div>
+
                 <div className="service__item-7">
-                  {/* <Link href="/service-details-dark"> */}
                   <h3 className="service__title-7">
-                    Web & Mobile <span>Development</span>
+                    Natural Language <span>Processing</span>
                   </h3>
-                  {/* </Link> */}
                   <p>
-                    We bring brands to life online with modern,
-                    performance-optimized websites and mobile applications, all
-                    crafted with user-centric design.
+                    Provide sentiment analysis, content summarization, and
+                    keyword extraction services.
                   </p>
                   <ul>
-                    <li>+ Responsive Web Design</li>
-                    <li>+ E-Commerce Development</li>
-                    <li>+ Mobile App Development</li>
+                    <li>+ Sentiment Analysis</li>
+                    <li>+ Content Summarization</li>
+                    <li>+ Keyword Extraction</li>
                   </ul>
                 </div>
+
                 <div className="service__item-7">
-                  {/* <Link href="/service-details-dark"> */}
                   <h3 className="service__title-7">
-                    Digital <span>Marketing</span>
+                    Image & Video <span>Analysis</span>
                   </h3>
-                  {/* </Link> */}
                   <p>
-                    Harness the power of digital marketing to reach a larger
-                    audience and boost your business&apos;s online presence.
-                  </p>
-                  <ul>
-                    <li>+ SEO Optimization</li>
-                    <li>+ Content Marketing</li>
-                    <li>+ Social Media Marketing</li>
-                  </ul>
-                </div>
-                <div className="service__item-7">
-                  {/* <Link href="/service-details-dark"> */}
-                  <h3 className="service__title-7">
-                    Content <span>Creation</span>
-                  </h3>
-                  {/* </Link> */}
-                  <p>
-                    Craft compelling narratives and impactful content to
-                    resonate with your target audience.
-                  </p>
-                  <ul>
-                    <li>+ Article & Blog Writing</li>
-                    <li>+ Copywriting</li>
-                    <li>+ Graphic Design</li>
-                  </ul>
-                </div>
-                <div className="service__item-7">
-                  {/* <Link href="/service-details-dark"> */}
-                  <h3 className="service__title-7">
-                    Social Media <span>Management</span>
-                  </h3>
-                  {/* </Link> */}
-                  {/* <p>
-                    Elevate your brand's online presence with our expert social
-                    media management strategies media management strategies and
+                    Offer object recognition and user content moderation
                     services.
-                  </p> */}
+                  </p>
                   <ul>
-                    <li>+ Platform Strategy</li>
-                    <li>+ Content Calendaring</li>
-                    <li>+ Engagement Monitoring</li>
+                    <li>+ Object Recognition</li>
+                    <li>+ Content Moderation</li>
+                    <li>+ Visual Insights</li>
+                  </ul>
+                </div>
+
+                <div className="service__item-7">
+                  <h3 className="service__title-7">
+                    Recommendation <span>Systems</span>
+                  </h3>
+                  <p>
+                    Design recommendation algorithms for various platforms based
+                    on user behavior.
+                  </p>
+                  <ul>
+                    <li>+ Product Suggestions</li>
+                    <li>+ Media Recommendations</li>
+                    <li>+ Personalized Content</li>
+                  </ul>
+                </div>
+
+                <div className="service__item-7">
+                  <h3 className="service__title-7">
+                    Process <span>Automation</span>
+                  </h3>
+                  <p>
+                    Integrate Robotic Process Automation (RPA) with AI for
+                    automating repetitive tasks.
+                  </p>
+                  <ul>
+                    <li>+ Data Entry Automation</li>
+                    <li>+ Form Submissions</li>
+                    <li>+ Workflow Improvements</li>
                   </ul>
                 </div>
               </div>
