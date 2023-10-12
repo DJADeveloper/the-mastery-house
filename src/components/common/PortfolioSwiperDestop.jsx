@@ -191,9 +191,9 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
           </SwiperSlide>
           {/* Services */}
           <SwiperSlide>
-            <section className="portfolio-section portfolio__service pt-110 pb-110">
-              <div className="container">
-                <div className="row">
+            <section className="portfolio-section portfolio__service">
+              <div className="container pt-100 ">
+                <div className="row ">
                   <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
                     <h2 className="sec-title">Services Tailored For You.</h2>
                   </div>

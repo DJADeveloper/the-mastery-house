@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import Solution from "../../../public/assets/imgs/thumb/solution.png";
+import Solution from "../../../public/assets/imgs/thumb/4.jpg";
 import Solution2 from "../../../public/assets/imgs/thumb/solution-2.png";
 import Solution3 from "../../../public/assets/imgs/thumb/solution-3.png";
 import Icon1 from "../../../public/assets/imgs/icon/1.png";
@@ -75,24 +75,8 @@ const ServiceHero = () => {
         <div className="container hero-line"></div>
         <div className="solution__wrapper">
           <div className="solution__left">
-            <div className="solution__img-1">
-              <Image
-                priority
-                width={435}
-                style={{ height: "auto" }}
-                src={Solution}
-                alt="Solution Image"
-              />
-            </div>
-            <div className="solution__img-2">
-              <Image
-                priority
-                width={220}
-                style={{ height: "auto" }}
-                src={Solution2}
-                alt="Solution Image"
-              />
-            </div>
+            <div className="solution__img-1"></div>
+            <div className="solution__img-2"></div>
           </div>
 
           <div className="solution__mid">
@@ -106,15 +90,7 @@ const ServiceHero = () => {
           </div>
 
           <div className="solution__right">
-            <div className="solution__img-3">
-              <Image
-                priority
-                width={459}
-                style={{ height: "auto" }}
-                src={Solution3}
-                alt="Solution Image"
-              />
-            </div>
+            <div className="solution__img-3"></div>
           </div>
         </div>
 

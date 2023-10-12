@@ -78,60 +78,125 @@ const DigitalAgencyHero = () => {
 
   return (
     <>
-      {/* <section className="hero__area ">
+      <section
+        className="hero__area"
+        style={{ position: "relative", height: "100vh" }}
+      >
+        <video
+          autoPlay
+          muted
+          loop
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 0, // Make sure video is at the bottom
+          }}
+        >
+          <source src="assets/video/Tmh_video.mp4" type="video/mp4" />
+        </video>
+
         <div className="container">
           <div className="row">
             <div className="col-xxl-12">
-              <div className="hero__content animation__hero_one">
-                <Link href="/service">
-                  Strategy, Design, Solution Development{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
+              {/* Overlay Content */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)", // Center the div
+                  color: "white",
+                  zIndex: 200,
+                  textAlign: "center", // Center align the text
+                }}
+                className="hero__content animation__hero_one"
+              >
                 <h2 className="hero__title" ref={heroTitle}>
-                  The Mastery <br /> House
-                </h2>
-
-                <div className="hero__title-wrapper">
-                  <p className="hero__sub-title" ref={heroSubTitle}>
-                    Merging technology and creativity, we embody{" "}
-                    <span>creative problem-solving</span> to craft unique
-                    experiences.
-                  </p>
-                </div>
-                <div
-                  className="hero__title-wrapper "
-                  style={{ marginInlineStart: "40%", marginTop: "-90px" }}
+                  Crafted In
+                  <br /> Code
+                  <div className="btn-wrapper d-flex justify-content-center mt-5">
+                    {" "}
+                    <Link
+                      href="/about-dark"
+                      className="wc-btn-black btn-hover d-flex "
+                    >
+                      Welcome
+                    </Link>
+                  </div>
+                </h2>{" "}
+              </div>
+              <div style={{ marginLeft: "200px" }}>
+                <p
+                  className="hero__sub-title "
+                  ref={heroSubTitle}
+                  style={{ marginBottom: "150px" }}
                 >
-                  <video autoPlay muted loop height={"70%"} width={"70%"}>
-                    <source src="assets/video/Tmh_video.mp4" type="video/mp4" />
-                  </video>
-                </div>
-
-                <Image
-                  priority
-                  width={170}
-                  style={{ height: "auto" }}
-                  src={ArrowDownBig}
-                  alt="Arrow Down Icon"
-                />
+                  Merging technology and creativity, we embody{" "}
+                  <span>creative problem-solving</span> to craft unique
+                  experiences.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <Image
-          priority
-          style={{ width: "auto", height: "auto" }}
-          src={Hero1bg}
-          alt="image"
-          className="hero1_bg"
-        />
-      </section> */}
-      <section className="hero__area">
-        <video autoPlay muted loop height={"60%"} width={"100%"}>
-          <source src="assets/video/Tmh_video.mp4" type="video/mp4" />
-        </video>
+
+        {/* <section className="hero__area ">
+          <div className="container">
+            <div className="row">
+              <div className="col-xxl-12">
+                <div className="hero__content animation__hero_one">
+                  <Link href="/service">
+                    Strategy, Design, Solution Development{" "}
+                    <span>
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </Link>
+                  <h2 className="hero__title" ref={heroTitle}>
+                    The Mastery <br /> House
+                  </h2>
+
+                  <div className="hero__title-wrapper">
+                    <p className="hero__sub-title" ref={heroSubTitle}>
+                      Merging technology and creativity, we embody{" "}
+                      <span>creative problem-solving</span> to craft unique
+                      experiences.
+                    </p>
+                  </div>
+                  <div
+                    className="hero__title-wrapper "
+                    style={{ marginInlineStart: "40%", marginTop: "-90px" }}
+                  >
+                    <video autoPlay muted loop height={"70%"} width={"70%"}>
+                      <source
+                        src="assets/video/Tmh_video.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+
+                  <Image
+                    priority
+                    width={170}
+                    style={{ height: "auto" }}
+                    src={ArrowDownBig}
+                    alt="Arrow Down Icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <Image
+            priority
+            style={{ width: "auto", height: "auto" }}
+            src={Hero1bg}
+            alt="image"
+            className="hero1_bg"
+          />
+        </section> */}
       </section>
     </>
   );

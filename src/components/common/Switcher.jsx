@@ -15,6 +15,8 @@ const Switcher = ({ setMode, mode, cursor1, cursor2 }) => {
     }
   }, [setMode]);
 
+  console.log(mode, "mode");
+
   const openSwitcher = () => {
     switcherOpen.current.style.display = "none";
     switcherClose.current.style.display = "flex";

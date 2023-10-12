@@ -7,6 +7,12 @@ import Service23 from "../../../public/assets/imgs/service/2/python.svg";
 import Service24 from "../../../public/assets/imgs/service/2/blockchain.svg";
 import Service25 from "../../../public/assets/imgs/service/2/ecommerce.svg";
 import Service26 from "../../../public/assets/imgs/service/2/saas.svg";
+import Service21Light from "../../../public/assets/imgs/service/2/wordpress-light.svg";
+import Service22Light from "../../../public/assets/imgs/service/2/react-light.svg";
+import Service23Light from "../../../public/assets/imgs/service/2/python-light.svg";
+import Service24Light from "../../../public/assets/imgs/service/2/blockchain-light.svg";
+import Service25Light from "../../../public/assets/imgs/service/2/ecommerce-light.svg";
+import Service26Light from "../../../public/assets/imgs/service/2/saas-light.svg";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);

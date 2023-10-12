@@ -55,32 +55,27 @@ const DesignStudioAbout = () => {
               <div className="sec-text-wrapper">
                 <div className="sec-text text-anim">
                   <p>
-                    At The Mastery House, we are fueled by a mission to drive
-                    transformative digital change, seamlessly blending
-                    creativity and technology to empower businesses of all
-                    sizes. We envision a future where every enterprise,
-                    regardless of its scale, can access innovative strategies
-                    and tools, unlocking unparalleled growth and success in the
-                    digital realm and beyond.
+                    At The Mastery House, we transcend the ordinary. Nestled at
+                    the crossroads of technology, creativity, and marketing, we
+                    are a powerhouse that transforms abstract visions into
+                    tangible digital realities. Pioneering the digital frontier
+                    from Tampa, FL to New York, our expertise encompasses
+                    Digital Marketing, avant-garde Software Engineering, and
+                    forward-thinking Artificial Intelligence applications. Each
+                    endeavor is a testament to our commitment, innovation, and
+                    the relentless pursuit of mastery. As a passionate and
+                    dedicated team, we&apos;re not just here to keep pace with
+                    the evolving digital landscape, but to set the benchmark.
+                    Join us, as we redefine the digital narrative together
                   </p>
                   <br />
-                  &nbsp;
-                  <p>
-                    Upholding values of Innovation, Integrity, Client Success,
-                    and Social Responsibility, we craft a symbiotic relationship
-                    between your aspirations and our expertise. Our commitment
-                    to these principles reflects in our actions, as we
-                    constantly strive to uphold transparency, pioneer solutions,
-                    ensure client growth, and contribute to a compassionate and
-                    inclusive world by supporting autism organizations.
-                  </p>
                 </div>
                 <div className="sec-btn btn_wrapper">
                   <Link
                     className="wc-btn-pink btn-hover btn-item"
                     href="/contact-dark"
                   >
-                    <span></span> Explore Us{" "}
+                    <span></span> Get In Touch{" "}
                     <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>

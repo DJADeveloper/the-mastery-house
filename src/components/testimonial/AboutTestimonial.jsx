@@ -1,7 +1,7 @@
 import { FreeMode, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import testimonial from "../../../public/assets/imgs/testimonial/testimonial.svg";
+import testimonial from "../../../public/assets/imgs/thumb/6.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -17,20 +17,13 @@ const AboutTestimonial = () => {
           <span className="line-3"></span>
 
           <div className="row g-0">
-            <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-              <div>
-                <Image
-                  priority
-                  fill="responsive"
-                  src={testimonial}
-                  alt="testimonial"
-                />
-              </div>
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+              <div></div>
             </div>
 
             <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
-              <div className="testimonial__slider-wrapper-2 mt-5">
-                <div className="testimonial__slider ">
+              <div className="testimonial__slider-wrapper-2 mt-5 ">
+                <div className="testimonial__slider d-flex justify-content-center ">
                   <Swiper
                     modules={[FreeMode, Navigation]}
                     spaceBetween={0}
@@ -44,7 +37,7 @@ const AboutTestimonial = () => {
                     }}
                   >
                     <SwiperSlide>
-                      <div className="testimonial__slide  ">
+                      <div className="testimonial__slide bg-dark ">
                         <div className="testimonial__inner-2 p-3">
                           <h2 className="testimonial__title-2">
                             Unmatched Expertise
