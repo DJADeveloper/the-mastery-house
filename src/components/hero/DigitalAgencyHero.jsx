@@ -35,6 +35,8 @@ const DigitalAgencyHero = () => {
     };
   }, []);
 
+  console.log(isMobile, "is it mobile");
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       let tHero = gsap.context(() => {
@@ -93,7 +95,7 @@ const DigitalAgencyHero = () => {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            zIndex: 0, // Make sure video is at the bottom
+            zIndex: 0,
           }}
         >
           <source src="assets/video/Tmh_video.mp4" type="video/mp4" />
@@ -101,102 +103,49 @@ const DigitalAgencyHero = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-xxl-12">
-              {/* Overlay Content */}
+            <div className="col-xxl-12 col-lg-10 col-md-10 col-sm-12">
               <div
+                className="hero__content animation__hero_one"
                 style={{
                   position: "absolute",
                   top: "50%",
                   left: "50%",
-                  transform: "translate(-50%, -50%)", // Center the div
+                  transform: "translate(-50%, -50%)",
                   color: "white",
                   zIndex: 200,
-                  textAlign: "center", // Center align the text
+                  textAlign: "center",
                 }}
-                className="hero__content animation__hero_one"
               >
-                <h2 className="hero__title" ref={heroTitle}>
-                  Crafted In
-                  <br /> Code
-                  <div className="btn-wrapper d-flex justify-content-center mt-5">
-                    {" "}
+                <h2
+                  className={!isMobile ? "hero__title" : "fs-2"}
+                  ref={heroTitle}
+                >
+                  Welcome to
+                  <span>
+                    <h4>The Mastery House</h4>
+                  </span>
+                  <div className="d-flex justify-content-center mt-5 ">
                     <Link
                       href="/about-dark"
-                      className="wc-btn-black btn-hover d-flex "
+                      className="wc-btn-primary btn-hover d-flex "
                     >
-                      Welcome
+                      <p>Your Digital Story</p>
                     </Link>
                   </div>
-                </h2>{" "}
+                </h2>
               </div>
-              <div style={{ marginLeft: "200px" }}>
-                <p
-                  className="hero__sub-title "
-                  ref={heroSubTitle}
-                  style={{ marginBottom: "150px" }}
-                >
-                  Merging technology and creativity, we embody{" "}
-                  <span>creative problem-solving</span> to craft unique
-                  experiences.
-                </p>
-              </div>
+              {!isMobile && (
+                <div className="hero__sub-section">
+                  <p className="hero__sub-title" ref={heroSubTitle}>
+                    Merging technology and creativity, we embody{" "}
+                    <span>creative problem-solving</span> to craft unique
+                    experiences.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
-
-        {/* <section className="hero__area ">
-          <div className="container">
-            <div className="row">
-              <div className="col-xxl-12">
-                <div className="hero__content animation__hero_one">
-                  <Link href="/service">
-                    Strategy, Design, Solution Development{" "}
-                    <span>
-                      <i className="fa-solid fa-arrow-right"></i>
-                    </span>
-                  </Link>
-                  <h2 className="hero__title" ref={heroTitle}>
-                    The Mastery <br /> House
-                  </h2>
-
-                  <div className="hero__title-wrapper">
-                    <p className="hero__sub-title" ref={heroSubTitle}>
-                      Merging technology and creativity, we embody{" "}
-                      <span>creative problem-solving</span> to craft unique
-                      experiences.
-                    </p>
-                  </div>
-                  <div
-                    className="hero__title-wrapper "
-                    style={{ marginInlineStart: "40%", marginTop: "-90px" }}
-                  >
-                    <video autoPlay muted loop height={"70%"} width={"70%"}>
-                      <source
-                        src="assets/video/Tmh_video.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-
-                  <Image
-                    priority
-                    width={170}
-                    style={{ height: "auto" }}
-                    src={ArrowDownBig}
-                    alt="Arrow Down Icon"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <Image
-            priority
-            style={{ width: "auto", height: "auto" }}
-            src={Hero1bg}
-            alt="image"
-            className="hero1_bg"
-          />
-        </section> */}
       </section>
     </>
   );

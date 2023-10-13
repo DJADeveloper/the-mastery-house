@@ -376,7 +376,7 @@ const PortfolioSwiperMobile = ({ portfolioSection, portfolioHeroImg }) => {
                   <div className="pf-btm">
                     <div className="row">
                       <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-5">
-                        <div className="footer__copyright-2">
+                        <div className="footer__copyright-3">
                           <p>
                             © 2022 - 2025 | Alrights reserved by{" "}
                             <a
@@ -388,7 +388,7 @@ const PortfolioSwiperMobile = ({ portfolioSection, portfolioHeroImg }) => {
                           </p>
                         </div>
                       </div>
-                      <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
+                      {/* <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-7">
                         <div className="footer__nav">
                           <ul className="footer-menu menu-anim">
                             <li>
@@ -405,7 +405,7 @@ const PortfolioSwiperMobile = ({ portfolioSection, portfolioHeroImg }) => {
                             </li>
                           </ul>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

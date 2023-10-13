@@ -13,7 +13,7 @@ const ServiceV6Dark = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <RootLayout header="header5" footer="footer2" defaultMode="dark">
+        <RootLayout header="header5" footer="footer5" defaultMode="dark">
           <ServiceV6Hero />
           <CreativeAgencyService />
           <CreativeAgencyCTA />
